@@ -94,7 +94,7 @@ Este proyecto es privado y no tiene una licencia pública especificada.
 ## Contacto
 
 Para preguntas o soporte, contacta al equipo de desarrollo.
-
+Al WhatsApp 3128540710
 ---
 
 *Desarrollado con ❤️ usando Angular.*

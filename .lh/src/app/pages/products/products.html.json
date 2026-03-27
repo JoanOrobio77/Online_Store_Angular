@@ -1,0 +1,90 @@
+{
+    "sourceFile": "src/app/pages/products/products.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 18,
+            "patches": [
+                {
+                    "date": 1750882188553,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1750882197196,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,8 @@\n         <article class=\"producto\">\r\n             <img [src]=\"producto.imagen\" [alt]=\"producto.nombre\">\r\n             <h3>{{producto.nombre}}</h3>\r\n             <p>{{producto.descripcion}}</p>\r\n-            \r\n+            <strong>{{producto.precio}}</strong>\r\n         </article>\r\n     }\r\n </section>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1750882235120,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <h1>Nuestros productos</h1>\r\n <img src=\"/img/bike12.jpg\" alt=\"Bike\">\r\n <section class=\"productos\">\r\n-    @for(producto of productos; track producto.id){\r\n+    @for(producto of productos; track producto){\r\n         <article class=\"producto\">\r\n             <img [src]=\"producto.imagen\" [alt]=\"producto.nombre\">\r\n             <h3>{{producto.nombre}}</h3>\r\n             <p>{{producto.descripcion}}</p>\r\n"
+                },
+                {
+                    "date": 1750882240431,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <h1>Nuestros productos</h1>\r\n <img src=\"/img/bike12.jpg\" alt=\"Bike\">\r\n <section class=\"productos\">\r\n-    @for(producto of productos; track producto){\r\n+    @for(producto of productos; track producto.id){\r\n         <article class=\"producto\">\r\n             <img [src]=\"producto.imagen\" [alt]=\"producto.nombre\">\r\n             <h3>{{producto.nombre}}</h3>\r\n             <p>{{producto.descripcion}}</p>\r\n"
+                },
+                {
+                    "date": 1750882285496,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n <img src=\"/img/bike12.jpg\" alt=\"Bike\">\r\n <section class=\"productos\">\r\n     @for(producto of productos; track producto.id){\r\n         <article class=\"producto\">\r\n-            <img [src]=\"producto.imagen\" [alt]=\"producto.nombre\">\r\n+            <img[src]=\"producto.imagen\" [alt]=\"producto.nombre\">\r\n             <h3>{{producto.nombre}}</h3>\r\n             <p>{{producto.descripcion}}</p>\r\n             <strong>{{producto.precio}}</strong>\r\n         </article>\r\n"
+                },
+                {
+                    "date": 1750884036104,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n <h1>Nuestros productos</h1>\r\n-<img src=\"/img/bike12.jpg\" alt=\"Bike\">\r\n+<img src=\"//bike12.jpg\" alt=\"Bike\">\r\n <section class=\"productos\">\r\n     @for(producto of productos; track producto.id){\r\n         <article class=\"producto\">\r\n-            <img[src]=\"producto.imagen\" [alt]=\"producto.nombre\">\r\n+            <img [src]=\"producto.imagen\" [alt]=\"producto.nombre\">\r\n             <h3>{{producto.nombre}}</h3>\r\n             <p>{{producto.descripcion}}</p>\r\n             <strong>{{producto.precio}}</strong>\r\n         </article>\r\n"
+                },
+                {
+                    "date": 1750884042485,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n <h1>Nuestros productos</h1>\r\n-<img src=\"//bike12.jpg\" alt=\"Bike\">\r\n+<img src=\"/assets/bike12.jpg\" alt=\"Bike\">\r\n <section class=\"productos\">\r\n     @for(producto of productos; track producto.id){\r\n         <article class=\"producto\">\r\n             <img [src]=\"producto.imagen\" [alt]=\"producto.nombre\">\r\n"
+                },
+                {
+                    "date": 1750884224074,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n <img src=\"/assets/bike12.jpg\" alt=\"Bike\">\r\n <section class=\"productos\">\r\n     @for(producto of productos; track producto.id){\r\n         <article class=\"producto\">\r\n-            <img [src]=\"producto.imagen\" [alt]=\"producto.nombre\">\r\n+            <img [src=\"producto.imagen\" [alt]=\"producto.nombre\">\r\n             <h3>{{producto.nombre}}</h3>\r\n             <p>{{producto.descripcion}}</p>\r\n             <strong>{{producto.precio}}</strong>\r\n         </article>\r\n"
+                },
+                {
+                    "date": 1750884239747,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n <img src=\"/assets/bike12.jpg\" alt=\"Bike\">\r\n <section class=\"productos\">\r\n     @for(producto of productos; track producto.id){\r\n         <article class=\"producto\">\r\n-            <img [src=\"producto.imagen\" [alt]=\"producto.nombre\">\r\n+            <img src=\"producto.imagen\" [alt=\"producto.nombre\">\r\n             <h3>{{producto.nombre}}</h3>\r\n             <p>{{producto.descripcion}}</p>\r\n             <strong>{{producto.precio}}</strong>\r\n         </article>\r\n"
+                },
+                {
+                    "date": 1750884385676,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n <img src=\"/assets/bike12.jpg\" alt=\"Bike\">\r\n <section class=\"productos\">\r\n     @for(producto of productos; track producto.id){\r\n         <article class=\"producto\">\r\n-            <img src=\"producto.imagen\" [alt=\"producto.nombre\">\r\n+            <img src=\"product.imagen\" alt=\"producto.nombre\">\r\n             <h3>{{producto.nombre}}</h3>\r\n             <p>{{producto.descripcion}}</p>\r\n             <strong>{{producto.precio}}</strong>\r\n         </article>\r\n"
+                },
+                {
+                    "date": 1750884392792,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n <img src=\"/assets/bike12.jpg\" alt=\"Bike\">\r\n <section class=\"productos\">\r\n     @for(producto of productos; track producto.id){\r\n         <article class=\"producto\">\r\n-            <img src=\"product.imagen\" alt=\"producto.nombre\">\r\n+            <img src]=\"product.imagen\" alt=\"producto.nombre\">\r\n             <h3>{{producto.nombre}}</h3>\r\n             <p>{{producto.descripcion}}</p>\r\n             <strong>{{producto.precio}}</strong>\r\n         </article>\r\n"
+                },
+                {
+                    "date": 1750884403510,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n <img src=\"/assets/bike12.jpg\" alt=\"Bike\">\r\n <section class=\"productos\">\r\n     @for(producto of productos; track producto.id){\r\n         <article class=\"producto\">\r\n-            <img src]=\"product.imagen\" alt=\"producto.nombre\">\r\n+            <img [src]=\"producto.imagen\" alt=\"producto.nombre\">\r\n             <h3>{{producto.nombre}}</h3>\r\n             <p>{{producto.descripcion}}</p>\r\n             <strong>{{producto.precio}}</strong>\r\n         </article>\r\n"
+                },
+                {
+                    "date": 1750884410100,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n <img src=\"/assets/bike12.jpg\" alt=\"Bike\">\r\n <section class=\"productos\">\r\n     @for(producto of productos; track producto.id){\r\n         <article class=\"producto\">\r\n-            <img [src]=\"producto.imagen\" alt=\"producto.nombre\">\r\n+            <img [src]=\"productos.imagen\" alt=\"producto.nombre\">\r\n             <h3>{{producto.nombre}}</h3>\r\n             <p>{{producto.descripcion}}</p>\r\n             <strong>{{producto.precio}}</strong>\r\n         </article>\r\n"
+                },
+                {
+                    "date": 1750884420463,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n <img src=\"/assets/bike12.jpg\" alt=\"Bike\">\r\n <section class=\"productos\">\r\n     @for(producto of productos; track producto.id){\r\n         <article class=\"producto\">\r\n-            <img [src]=\"productos.imagen\" alt=\"producto.nombre\">\r\n+            <img [src]=\"producto.imagen\" alt]=\"producto.nombre\">\r\n             <h3>{{producto.nombre}}</h3>\r\n             <p>{{producto.descripcion}}</p>\r\n             <strong>{{producto.precio}}</strong>\r\n         </article>\r\n"
+                },
+                {
+                    "date": 1750884862701,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,10 @@\n <h1>Nuestros productos</h1>\r\n <img src=\"/assets/bike12.jpg\" alt=\"Bike\">\r\n <section class=\"productos\">\r\n-    @for(producto of productos; track producto.id){\r\n-        <article class=\"producto\">\r\n-            <img [src]=\"producto.imagen\" alt]=\"producto.nombre\">\r\n-            <h3>{{producto.nombre}}</h3>\r\n-            <p>{{producto.descripcion}}</p>\r\n-            <strong>{{producto.precio}}</strong>\r\n-        </article>\r\n-    }\r\n+    <article class=\"producto\" *ngFor=\"let producto of productos; trackBy: trackById\">\r\n+        <img [src]=\"producto.imagen\" [alt]=\"producto.nombre\">\r\n+        <h3>{{producto.nombre}}</h3>\r\n+        <p>{{producto.descripcion}}</p>\r\n+        <strong>{{producto.precio}}</strong>\r\n+    </article>\r\n </section>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1750885121887,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,12 @@\n-<h1>Nuestros productos</h1>\r\n-<img src=\"/assets/bike12.jpg\" alt=\"Bike\">\r\n-<section class=\"productos\">\r\n-    <article class=\"producto\" *ngFor=\"let producto of productos; trackBy: trackById\">\r\n-        <img [src]=\"producto.imagen\" [alt]=\"producto.nombre\">\r\n-        <h3>{{producto.nombre}}</h3>\r\n-        <p>{{producto.descripcion}}</p>\r\n-        <strong>{{producto.precio}}</strong>\r\n-    </article>\r\n+<h1>Nuestros productos</h1>\n+<img src=\"/assets/bike12.jpg\" alt=\"Bike\">\n+<section class=\"productos\">\n+    @for(producto of productos; track producto.id){\n+        <article class=\"producto\">\n+            <img [src]=\"producto.imagen\" [alt]=\"producto.nombre\">\n+            <h3>{{producto.nombre}}</h3>\n+            <p>{{producto.descripcion}}</p>\n+            <strong>{{producto.precio}}</strong>\n+        </article>\n+    }\n </section>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1750885264650,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,10 @@\n <h1>Nuestros productos</h1>\n <img src=\"/assets/bike12.jpg\" alt=\"Bike\">\n <section class=\"productos\">\n-    @for(producto of productos; track producto.id){\n-        <article class=\"producto\">\n-            <img [src]=\"producto.imagen\" [alt]=\"producto.nombre\">\n-            <h3>{{producto.nombre}}</h3>\n-            <p>{{producto.descripcion}}</p>\n-            <strong>{{producto.precio}}</strong>\n-        </article>\n-    }\n+    <article class=\"producto\" *ngFor=\"let producto of productos; trackBy: trackById\">\n+        <img [src]=\"'/assets/' + producto.imagen\" [alt]=\"producto.nombre\">\n+        <h3>{{producto.nombre}}</h3>\n+        <p>{{producto.descripcion}}</p>\n+        <strong>{{producto.precio}}</strong>\n+    </article>\n </section>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1750942777350,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n-<h1>Nuestros productos</h1>\n-<img src=\"/assets/bike12.jpg\" alt=\"Bike\">\n-<section class=\"productos\">\n-    <article class=\"producto\" *ngFor=\"let producto of productos; trackBy: trackById\">\n-        <img [src]=\"'/assets/' + producto.imagen\" [alt]=\"producto.nombre\">\n-        <h3>{{producto.nombre}}</h3>\n-        <p>{{producto.descripcion}}</p>\n-        <strong>{{producto.precio}}</strong>\n-    </article>\n-</section>\n\\ No newline at end of file\n+<h1>Nuestros productos</h1>\r\n+<section class=\"productos\">\r\n+  <article class=\"producto-card\" *ngFor=\"let producto of productos; trackBy: trackById\">\r\n+    <img [src]=\"'/assets/' + producto.imagen\" [alt]=\"producto.nombre\">\r\n+    <h3>{{producto.nombre}}</h3>\r\n+    <p>{{producto.descripcion}}</p>\r\n+    <strong>${{producto.precio}}</strong>\r\n+    <button (click)=\"agregarAlCarrito(producto)\">Agregar al carrito</button>\r\n+  </article>\r\n+</section>\r\n"
+                },
+                {
+                    "date": 1751027437806,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n <h1>Nuestros productos</h1>\r\n+<div *ngIf=\"mensaje\" class=\"mensaje-carrito\">{{ mensaje }}</div>\r\n <section class=\"productos\">\r\n   <article class=\"producto-card\" *ngFor=\"let producto of productos; trackBy: trackById\">\r\n     <img [src]=\"'/assets/' + producto.imagen\" [alt]=\"producto.nombre\">\r\n     <h3>{{producto.nombre}}</h3>\r\n"
+                }
+            ],
+            "date": 1750882188553,
+            "name": "Commit-0",
+            "content": "<h1>Nuestros productos</h1>\r\n<img src=\"/img/bike12.jpg\" alt=\"Bike\">\r\n<section class=\"productos\">\r\n    @for(producto of productos; track producto.id){\r\n        <article class=\"producto\">\r\n            <img [src]=\"producto.imagen\" [alt]=\"producto.nombre\">\r\n            <h3>{{producto.nombre}}</h3>\r\n            <p>{{producto.descripcion}}</p>\r\n            \r\n        </article>\r\n    }\r\n</section>"
+        }
+    ]
+}

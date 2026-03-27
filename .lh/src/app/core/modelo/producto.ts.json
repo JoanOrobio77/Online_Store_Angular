@@ -1,0 +1,70 @@
+{
+    "sourceFile": "src/app/core/modelo/producto.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 13,
+            "patches": [
+                {
+                    "date": 1750893248171,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1750893253999,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n export class Producto {\r\n-    \r\n+    id: number\r\n }\r\n"
+                },
+                {
+                    "date": 1750893259237,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n export class Producto {\r\n-    id: number\r\n+    id: number ;\r\n }\r\n"
+                },
+                {
+                    "date": 1750893266733,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n export class Producto {\r\n-    id: number ;\r\n+    id!: number;\r\n }\r\n"
+                },
+                {
+                    "date": 1750893272771,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,4 @@\n export class Producto {\r\n     id!: number;\r\n+    nombre\r\n }\r\n"
+                },
+                {
+                    "date": 1750893279964,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n export class Producto {\r\n     id!: number;\r\n-    nombre\r\n+    nombre: str\r\n }\r\n"
+                },
+                {
+                    "date": 1750893285050,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n export class Producto {\r\n     id!: number;\r\n-    nombre: str\r\n+    nombre: string\r\n }\r\n"
+                },
+                {
+                    "date": 1750893290871,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,5 @@\n export class Producto {\r\n     id!: number;\r\n-    nombre: string\r\n+    nombre: string;\r\n+    precio\r\n }\r\n"
+                },
+                {
+                    "date": 1750893302172,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n export class Producto {\r\n     id!: number;\r\n     nombre: string;\r\n-    precio\r\n+    precio:\r\n }\r\n"
+                },
+                {
+                    "date": 1750893313327,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n export class Producto {\r\n     id!: number;\r\n     nombre: string;\r\n-    precio:\r\n+    precio: string\r\n }\r\n"
+                },
+                {
+                    "date": 1750893330806,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n export class Producto {\r\n     id!: number;\r\n     nombre: string;\r\n-    precio: string\r\n+    precio: num;\r\n }\r\n"
+                },
+                {
+                    "date": 1750893339442,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n export class Producto {\r\n     id!: number;\r\n     nombre: string;\r\n-    precio: num;\r\n+    precio: number;\r\n+    imagen\r\n }\r\n"
+                },
+                {
+                    "date": 1750893345340,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n export class Producto {\r\n     id!: number;\r\n     nombre: string;\r\n     precio: number;\r\n-    imagen\r\n+    imagen: string\r\n }\r\n"
+                },
+                {
+                    "date": 1750893356987,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n export class Producto {\r\n     id!: number;\r\n-    nombre: string;\r\n-    precio: number;\r\n-    imagen: string\r\n+    nombre!: string;\r\n+    precio!: number;\r\n+    imagen!: string;\r\n }\r\n"
+                }
+            ],
+            "date": 1750893248171,
+            "name": "Commit-0",
+            "content": "export class Producto {\r\n    \r\n}\r\n"
+        }
+    ]
+}

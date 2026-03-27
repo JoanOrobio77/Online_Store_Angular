@@ -1,0 +1,54 @@
+{
+    "sourceFile": "src/app/pages/products/products.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 9,
+            "patches": [
+                {
+                    "date": 1750881492716,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1750881498916,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n   imports: [],\r\n   templateUrl: './products.html',\r\n   styleUrl: './products.css'\r\n })\r\n-export class Products {\r\n+export class Productos {\r\n   productos : Product[] = [];\r\n   constructor(private product:Products){\r\n     this.productos = this.product.getProducts();\r\n   }\r\n"
+                },
+                {
+                    "date": 1750881576717,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n   imports: [],\r\n   templateUrl: './products.html',\r\n   styleUrl: './products.css'\r\n })\r\n-export class Productos {\r\n+export class Products {\r\n   productos : Product[] = [];\r\n   constructor(private product:Products){\r\n     this.productos = this.product.getProducts();\r\n   }\r\n"
+                },
+                {
+                    "date": 1750881734137,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n   imports: [],\r\n   templateUrl: './products.html',\r\n   styleUrl: './products.css'\r\n })\r\n-export class Products {\r\n+export class Productos {\r\n   productos : Product[] = [];\r\n   constructor(private product:Products){\r\n     this.productos = this.product.getProducts();\r\n   }\r\n"
+                },
+                {
+                    "date": 1750881930513,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import { Component, inject } from '@angular/core';\r\n import { Product } from '../../services/products';\r\n-import { Products } from '../../services/products';\r\n+import { Productos } from '../../services/products';\r\n \r\n @Component({\r\n   selector: 'app-products',\r\n   imports: [],\r\n"
+                },
+                {
+                    "date": 1750885268258,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import { Component, inject } from '@angular/core';\r\n import { Product } from '../../services/products';\r\n-import { Productos } from '../../services/products';\r\n+import { Products } from '../../services/products';\r\n \r\n @Component({\r\n   selector: 'app-products',\r\n   imports: [],\r\n@@ -12,5 +12,9 @@\n   productos : Product[] = [];\r\n   constructor(private product:Products){\r\n     this.productos = this.product.getProducts();\r\n   }\r\n+\r\n+  trackById(index: number, item: Product) {\r\n+    return item.id;\r\n+  }\r\n }\r\n"
+                },
+                {
+                    "date": 1750885413422,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,12 @@\n import { Component, inject } from '@angular/core';\r\n+import { CommonModule } from '@angular/common';\r\n import { Product } from '../../services/products';\r\n import { Products } from '../../services/products';\r\n \r\n @Component({\r\n   selector: 'app-products',\r\n-  imports: [],\r\n+  imports: [CommonModule],\r\n   templateUrl: './products.html',\r\n   styleUrl: './products.css'\r\n })\r\n export class Productos {\r\n"
+                },
+                {
+                    "date": 1750942775722,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,21 +1,26 @@\n-import { Component, inject } from '@angular/core';\r\n+import { Component } from '@angular/core';\r\n import { CommonModule } from '@angular/common';\r\n import { Product } from '../../services/products';\r\n-import { Products } from '../../services/products';\r\n+import { Products as ProductsService } from '../../services/products';\r\n+import { CartService } from '../../services/cart';\r\n \r\n @Component({\r\n   selector: 'app-products',\r\n   imports: [CommonModule],\r\n   templateUrl: './products.html',\r\n   styleUrl: './products.css'\r\n })\r\n-export class Productos {\r\n-  productos : Product[] = [];\r\n-  constructor(private product:Products){\r\n-    this.productos = this.product.getProducts();\r\n+export class Products {\r\n+  productos: Product[] = [];\r\n+  constructor(private productsService: ProductsService, private cartService: CartService) {\r\n+    this.productos = this.productsService.getProducts();\r\n   }\r\n \r\n   trackById(index: number, item: Product) {\r\n     return item.id;\r\n   }\r\n+\r\n+  agregarAlCarrito(producto: Product) {\r\n+    this.cartService.addToCart(producto);\r\n+  }\r\n }\r\n"
+                },
+                {
+                    "date": 1750945358491,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,10 @@\n @Component({\r\n   selector: 'app-products',\r\n   imports: [CommonModule],\r\n   templateUrl: './products.html',\r\n-  styleUrl: './products.css'\r\n+  styleUrl: './products.css',\r\n+  providers: [ProductsService]\r\n })\r\n export class Products {\r\n   productos: Product[] = [];\r\n   constructor(private productsService: ProductsService, private cartService: CartService) {\r\n"
+                },
+                {
+                    "date": 1751027432014,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,8 +12,9 @@\n   providers: [ProductsService]\r\n })\r\n export class Products {\r\n   productos: Product[] = [];\r\n+  mensaje: string = '';\r\n   constructor(private productsService: ProductsService, private cartService: CartService) {\r\n     this.productos = this.productsService.getProducts();\r\n   }\r\n \r\n@@ -22,6 +23,8 @@\n   }\r\n \r\n   agregarAlCarrito(producto: Product) {\r\n     this.cartService.addToCart(producto);\r\n+    this.mensaje = `Producto agregado al carrito: ${producto.nombre}`;\r\n+    setTimeout(() => this.mensaje = '', 2000);\r\n   }\r\n }\r\n"
+                }
+            ],
+            "date": 1750881492716,
+            "name": "Commit-0",
+            "content": "import { Component, inject } from '@angular/core';\r\nimport { Product } from '../../services/products';\r\nimport { Products } from '../../services/products';\r\n\r\n@Component({\r\n  selector: 'app-products',\r\n  imports: [],\r\n  templateUrl: './products.html',\r\n  styleUrl: './products.css'\r\n})\r\nexport class Products {\r\n  productos : Product[] = [];\r\n  constructor(private product:Products){\r\n    this.productos = this.product.getProducts();\r\n  }\r\n}\r\n"
+        }
+    ]
+}

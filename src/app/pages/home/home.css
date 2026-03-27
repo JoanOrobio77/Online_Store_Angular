@@ -1,0 +1,71 @@
+h1 {
+  text-align: center;
+  font-size: 40px;
+  letter-spacing: 10px;
+}
+
+.home-img-container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+}
+
+.home-img-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+}
+
+/* Estilos base compartidos */
+.ver-productos-btn,
+.login-btn {
+  position: absolute;
+  top: 18px;
+  background: #000000;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 18px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s;
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* Posición específica de cada botón */
+.ver-productos-btn {
+  left: 18px;
+}
+
+.login-btn {
+  left: 160px; /* Puedes ajustar esto según el tamaño del botón anterior */
+}
+
+/* Hover */
+.ver-productos-btn:hover,
+.login-btn:hover {
+  background: #166d13;
+}
+
+.registro-link {
+  position: absolute;
+  top: 60px;
+  left: 160px;
+  font-size: 0.9rem;
+  color: black;
+  text-decoration: none; /* Elimina subrayado global */
+  cursor: pointer;
+  z-index: 2;
+}
+
+.registro-link:hover .subrayado {
+  color: #000000;
+}
+
+/* Solo subrayar la palabra "Regístrate" */
+.subrayado {
+  text-decoration: underline;
+}

@@ -1,0 +1,26 @@
+{
+    "sourceFile": "src/app/pages/registro/registro.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1751026805646,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1751026981327,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,18 +12,24 @@\n   nombre: string = '';\r\n   email: string = '';\r\n   username: string = '';\r\n   password: string = '';\r\n+  confirmPassword: string = '';\r\n   error: string = '';\r\n   success: string = '';\r\n \r\n   onSubmit(event: Event) {\r\n     event.preventDefault();\r\n-    if (!this.nombre || !this.email || !this.username || !this.password) {\r\n+    if (!this.nombre || !this.email || !this.username || !this.password || !this.confirmPassword) {\r\n       this.error = 'Por favor, completa todos los campos.';\r\n       this.success = '';\r\n       return;\r\n     }\r\n+    if (this.password !== this.confirmPassword) {\r\n+      this.error = 'Las contraseñas no coinciden.';\r\n+      this.success = '';\r\n+      return;\r\n+    }\r\n     // Simulación de registro exitoso\r\n     this.error = '';\r\n     this.success = '¡Registro exitoso! Ahora puedes iniciar sesión.';\r\n     // Aquí podrías guardar el usuario o redirigir\r\n"
+                },
+                {
+                    "date": 1751027079327,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,37 +1,31 @@\n-import { Component } from '@angular/core';\r\n-import { FormsModule } from '@angular/forms';\r\n-import { NgIf } from '@angular/common';\r\n-\r\n-@Component({\r\n-  selector: 'app-registro',\r\n-  imports: [FormsModule, NgIf],\r\n-  templateUrl: './registro.html',\r\n-  styleUrl: './registro.css'\r\n-})\r\n-export class Registro {\r\n-  nombre: string = '';\r\n-  email: string = '';\r\n-  username: string = '';\r\n-  password: string = '';\r\n-  confirmPassword: string = '';\r\n-  error: string = '';\r\n-  success: string = '';\r\n-\r\n-  onSubmit(event: Event) {\r\n-    event.preventDefault();\r\n-    if (!this.nombre || !this.email || !this.username || !this.password || !this.confirmPassword) {\r\n-      this.error = 'Por favor, completa todos los campos.';\r\n-      this.success = '';\r\n-      return;\r\n-    }\r\n-    if (this.password !== this.confirmPassword) {\r\n-      this.error = 'Las contraseñas no coinciden.';\r\n-      this.success = '';\r\n-      return;\r\n-    }\r\n-    // Simulación de registro exitoso\r\n-    this.error = '';\r\n-    this.success = '¡Registro exitoso! Ahora puedes iniciar sesión.';\r\n-    // Aquí podrías guardar el usuario o redirigir\r\n-  }\r\n-}\r\n+import { Component } from '@angular/core';\n+import { FormsModule } from '@angular/forms';\n+import { NgIf } from '@angular/common';\n+\n+@Component({\n+  selector: 'app-registro',\n+  imports: [FormsModule, NgIf],\n+  templateUrl: './registro.html',\n+  styleUrl: './registro.css'\n+})\n+export class Registro {\n+  nombre: string = '';\n+  email: string = '';\n+  username: string = '';\n+  password: string = '';\n+  error: string = '';\n+  success: string = '';\n+\n+  onSubmit(event: Event) {\n+    event.preventDefault();\n+    if (!this.nombre || !this.email || !this.username || !this.password) {\n+      this.error = 'Por favor, completa todos los campos.';\n+      this.success = '';\n+      return;\n+    }\n+    // Simulación de registro exitoso\n+    this.error = '';\n+    this.success = '¡Registro exitoso! Ahora puedes iniciar sesión.';\n+    // Aquí podrías guardar el usuario o redirigir\n+  }\n+}\n"
+                }
+            ],
+            "date": 1751026805646,
+            "name": "Commit-0",
+            "content": "import { Component } from '@angular/core';\r\nimport { FormsModule } from '@angular/forms';\r\nimport { NgIf } from '@angular/common';\r\n\r\n@Component({\r\n  selector: 'app-registro',\r\n  imports: [FormsModule, NgIf],\r\n  templateUrl: './registro.html',\r\n  styleUrl: './registro.css'\r\n})\r\nexport class Registro {\r\n  nombre: string = '';\r\n  email: string = '';\r\n  username: string = '';\r\n  password: string = '';\r\n  error: string = '';\r\n  success: string = '';\r\n\r\n  onSubmit(event: Event) {\r\n    event.preventDefault();\r\n    if (!this.nombre || !this.email || !this.username || !this.password) {\r\n      this.error = 'Por favor, completa todos los campos.';\r\n      this.success = '';\r\n      return;\r\n    }\r\n    // Simulación de registro exitoso\r\n    this.error = '';\r\n    this.success = '¡Registro exitoso! Ahora puedes iniciar sesión.';\r\n    // Aquí podrías guardar el usuario o redirigir\r\n  }\r\n}\r\n"
+        }
+    ]
+}

@@ -1,0 +1,70 @@
+{
+    "sourceFile": "src/app/core/services/producto.service.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 13,
+            "patches": [
+                {
+                    "date": 1750894428693,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1750894435440,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,7 +3,7 @@\n @Injectable({\r\n   providedIn: 'root'\r\n })\r\n export class ProductoService {\r\n+  pr\r\n \r\n-\r\n }\r\n"
+                },
+                {
+                    "date": 1750894441247,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,7 +3,7 @@\n @Injectable({\r\n   providedIn: 'root'\r\n })\r\n export class ProductoService {\r\n-  pr\r\n+  private htt\r\n \r\n }\r\n"
+                },
+                {
+                    "date": 1750894447930,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,7 +3,7 @@\n @Injectable({\r\n   providedIn: 'root'\r\n })\r\n export class ProductoService {\r\n-  private htt\r\n+  private http = inject\r\n \r\n }\r\n"
+                },
+                {
+                    "date": 1750894453910,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,7 +3,7 @@\n @Injectable({\r\n   providedIn: 'root'\r\n })\r\n export class ProductoService {\r\n-  private http = inject\r\n+  private http = inject(H)\r\n \r\n }\r\n"
+                },
+                {
+                    "date": 1750894461716,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,7 +3,7 @@\n @Injectable({\r\n   providedIn: 'root'\r\n })\r\n export class ProductoService {\r\n-  private http = inject(H)\r\n+  private http = inject(HttpClient)\r\n \r\n }\r\n"
+                },
+                {
+                    "date": 1750894471727,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,7 +3,8 @@\n @Injectable({\r\n   providedIn: 'root'\r\n })\r\n export class ProductoService {\r\n-  private http = inject(HttpClient)\r\n+  private http = inject(HttpClient);\r\n+  private\r\n \r\n }\r\n"
+                },
+                {
+                    "date": 1750894477530,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,7 +4,7 @@\n   providedIn: 'root'\r\n })\r\n export class ProductoService {\r\n   private http = inject(HttpClient);\r\n-  private\r\n+  private url\r\n \r\n }\r\n"
+                },
+                {
+                    "date": 1750894498750,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,7 +4,7 @@\n   providedIn: 'root'\r\n })\r\n export class ProductoService {\r\n   private http = inject(HttpClient);\r\n-  private url\r\n+  private url: string \r\n \r\n }\r\n"
+                },
+                {
+                    "date": 1750894505312,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,7 +4,7 @@\n   providedIn: 'root'\r\n })\r\n export class ProductoService {\r\n   private http = inject(HttpClient);\r\n-  private url: string \r\n+  private url: string = \r\n \r\n }\r\n"
+                },
+                {
+                    "date": 1750894512401,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,7 +4,7 @@\n   providedIn: 'root'\r\n })\r\n export class ProductoService {\r\n   private http = inject(HttpClient);\r\n-  private url: string = \r\n+  private url: string = 'json'\r\n \r\n }\r\n"
+                },
+                {
+                    "date": 1750894588392,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,7 +4,7 @@\n   providedIn: 'root'\r\n })\r\n export class ProductoService {\r\n   private http = inject(HttpClient);\r\n-  private url: string = 'json'\r\n+  private url: string = 'json/pr'\r\n \r\n }\r\n"
+                },
+                {
+                    "date": 1750894595280,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,7 +4,7 @@\n   providedIn: 'root'\r\n })\r\n export class ProductoService {\r\n   private http = inject(HttpClient);\r\n-  private url: string = 'json/productoa'\r\n+  private url: string = 'json/productoa.json'\r\n \r\n }\r\n"
+                },
+                {
+                    "date": 1750894652480,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,14 @@\n+import { Injectable } from '@angular/core';\r\n+\r\n+@Injectable({\r\n+  providedIn: 'root'\r\n+})\r\n+export class ProductoService {\r\n+  private http = inject(HttpClient);\r\n+  private url: string = 'json/productos.json';\r\n+\r\n+  getProductos(){\r\n+    \r\n+  }\r\n+\r\n+}\r\n"
+                }
+            ],
+            "date": 1750894428693,
+            "name": "Commit-0",
+            "content": "import { Injectable } from '@angular/core';\r\n\r\n@Injectable({\r\n  providedIn: 'root'\r\n})\r\nexport class ProductoService {\r\n\r\n\r\n}\r\n"
+        }
+    ]
+}

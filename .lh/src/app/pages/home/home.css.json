@@ -1,0 +1,146 @@
+{
+    "sourceFile": "src/app/pages/home/home.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 32,
+            "patches": [
+                {
+                    "date": 1750959725868,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1750959805408,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,35 +1,5 @@\n h1{\r\n     text-align: center;\r\n     font-size: 40px;\r\n     letter-spacing: 10px;\r\n-}\r\n-\r\n-.home-img-container {\r\n-  position: relative;\r\n-  display: inline-block;\r\n-}\r\n-.home-img-container img {\r\n-  display: block;\r\n-  width: 100%;\r\n-  border-radius: 12px;\r\n-}\r\n-.ver-productos-btn {\r\n-  position: absolute;\r\n-  top: 18px;\r\n-  right: 18px;\r\n-  background: #1a8917;\r\n-  color: #fff;\r\n-  border: none;\r\n-  border-radius: 6px;\r\n-  padding: 8px 18px;\r\n-  font-size: 1rem;\r\n-  cursor: pointer;\r\n-  text-decoration: none;\r\n-  transition: background 0.2s;\r\n-  z-index: 2;\r\n-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);\r\n-  font-weight: 500;\r\n-}\r\n-.ver-productos-btn:hover {\r\n-  background: #166d13;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1750959865515,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,35 @@\n h1{\r\n     text-align: center;\r\n     font-size: 40px;\r\n     letter-spacing: 10px;\r\n+}\r\n+\r\n+.home-img-container {\r\n+  position: relative;\r\n+  display: inline-block;\r\n+}\r\n+.home-img-container img {\r\n+  display: block;\r\n+  width: 100%;\r\n+  border-radius: 12px;\r\n+}\r\n+.ver-productos-btn {\r\n+  position: absolute;\r\n+  top: 18px;\r\n+  left: 18px;\r\n+  background: #1a8917;\r\n+  color: #fff;\r\n+  border: none;\r\n+  border-radius: 6px;\r\n+  padding: 8px 18px;\r\n+  font-size: 1rem;\r\n+  cursor: pointer;\r\n+  text-decoration: none;\r\n+  transition: background 0.2s;\r\n+  z-index: 2;\r\n+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);\r\n+  font-weight: 500;\r\n+}\r\n+.ver-productos-btn:hover {\r\n+  background: #166d13;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1750959959258,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,12 @@\n }\r\n .home-img-container img {\r\n   display: block;\r\n   width: 100%;\r\n+  max-width: 600px;\r\n+  height: auto;\r\n   border-radius: 12px;\r\n+  object-fit: cover;\r\n }\r\n .ver-productos-btn {\r\n   position: absolute;\r\n   top: 18px;\r\n@@ -31,5 +34,17 @@\n   font-weight: 500;\r\n }\r\n .ver-productos-btn:hover {\r\n   background: #166d13;\r\n+}\r\n+\r\n+@media (max-width: 700px) {\r\n+  .home-img-container img {\r\n+    max-width: 100%;\r\n+  }\r\n+  .ver-productos-btn {\r\n+    font-size: 0.9rem;\r\n+    padding: 7px 14px;\r\n+    top: 10px;\r\n+    left: 10px;\r\n+  }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1750960231921,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,50 +1,5 @@\n h1{\r\n     text-align: center;\r\n     font-size: 40px;\r\n     letter-spacing: 10px;\r\n-}\r\n-\r\n-.home-img-container {\r\n-  position: relative;\r\n-  display: inline-block;\r\n-}\r\n-.home-img-container img {\r\n-  display: block;\r\n-  width: 100%;\r\n-  max-width: 600px;\r\n-  height: auto;\r\n-  border-radius: 12px;\r\n-  object-fit: cover;\r\n-}\r\n-.ver-productos-btn {\r\n-  position: absolute;\r\n-  top: 18px;\r\n-  left: 18px;\r\n-  background: #1a8917;\r\n-  color: #fff;\r\n-  border: none;\r\n-  border-radius: 6px;\r\n-  padding: 8px 18px;\r\n-  font-size: 1rem;\r\n-  cursor: pointer;\r\n-  text-decoration: none;\r\n-  transition: background 0.2s;\r\n-  z-index: 2;\r\n-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);\r\n-  font-weight: 500;\r\n-}\r\n-.ver-productos-btn:hover {\r\n-  background: #166d13;\r\n-}\r\n-\r\n-@media (max-width: 700px) {\r\n-  .home-img-container img {\r\n-    max-width: 100%;\r\n-  }\r\n-  .ver-productos-btn {\r\n-    font-size: 0.9rem;\r\n-    padding: 7px 14px;\r\n-    top: 10px;\r\n-    left: 10px;\r\n-  }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1750960324709,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,35 @@\n h1{\r\n     text-align: center;\r\n     font-size: 40px;\r\n     letter-spacing: 10px;\r\n+}\r\n+\r\n+.home-img-container {\r\n+  position: relative;\r\n+  display: inline-block;\r\n+}\r\n+.home-img-container img {\r\n+  display: block;\r\n+  width: 100%;\r\n+  border-radius: 12px;\r\n+}\r\n+.ver-productos-btn {\r\n+  position: absolute;\r\n+  top: 18px;\r\n+  left: 18px;\r\n+  background: #1a8917;\r\n+  color: #fff;\r\n+  border: none;\r\n+  border-radius: 6px;\r\n+  padding: 8px 18px;\r\n+  font-size: 1rem;\r\n+  cursor: pointer;\r\n+  text-decoration: none;\r\n+  transition: background 0.2s;\r\n+  z-index: 2;\r\n+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);\r\n+  font-weight: 500;\r\n+}\r\n+.ver-productos-btn:hover {\r\n+  background: #166d13;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1750960355539,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,12 +3,9 @@\n     font-size: 40px;\r\n     letter-spacing: 10px;\r\n }\r\n \r\n-.home-img-container {\r\n-  position: relative;\r\n-  display: inline-block;\r\n-}\r\n+\r\n .home-img-container img {\r\n   display: block;\r\n   width: 100%;\r\n   border-radius: 12px;\r\n"
+                },
+                {
+                    "date": 1750960363770,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,12 @@\n     font-size: 40px;\r\n     letter-spacing: 10px;\r\n }\r\n \r\n-\r\n+.home-img-container {\r\n+  position: relative;\r\n+  display: inline-block;\r\n+}\r\n .home-img-container img {\r\n   display: block;\r\n   width: 100%;\r\n   border-radius: 12px;\r\n"
+                },
+                {
+                    "date": 1750960370488,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,12 +7,9 @@\n .home-img-container {\r\n   position: relative;\r\n   display: inline-block;\r\n }\r\n-.home-img-container img {\r\n-  display: block;\r\n-  width: 100%;\r\n-  border-radius: 12px;\r\n+\r\n }\r\n .ver-productos-btn {\r\n   position: absolute;\r\n   top: 18px;\r\n"
+                },
+                {
+                    "date": 1750960421739,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,14 +3,15 @@\n     font-size: 40px;\r\n     letter-spacing: 10px;\r\n }\r\n \r\n-.home-img-container {\r\n-  position: relative;\r\n-  display: inline-block;\r\n-}\r\n \r\n }\r\n+.home-img-container img {\r\n+  display: block;\r\n+  width: 100%;\r\n+  border-radius: 12px;\r\n+}\r\n .ver-productos-btn {\r\n   position: absolute;\r\n   top: 18px;\r\n   left: 18px;\r\n"
+                },
+                {
+                    "date": 1750960442690,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,11 @@\n     font-size: 40px;\r\n     letter-spacing: 10px;\r\n }\r\n \r\n-\r\n+.home-img-container {\r\n+  position: relative;\r\n+  display: inline-block;\r\n }\r\n .home-img-container img {\r\n   display: block;\r\n   width: 100%;\r\n"
+                },
+                {
+                    "date": 1750998116789,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,35 +0,0 @@\n-h1{\r\n-    text-align: center;\r\n-    font-size: 40px;\r\n-    letter-spacing: 10px;\r\n-}\r\n-\r\n-.home-img-container {\r\n-  position: relative;\r\n-  display: inline-block;\r\n-}\r\n-.home-img-container img {\r\n-  display: block;\r\n-  width: 100%;\r\n-  border-radius: 12px;\r\n-}\r\n-.ver-productos-btn {\r\n-  position: absolute;\r\n-  top: 18px;\r\n-  left: 18px;\r\n-  background: #1a8917;\r\n-  color: #fff;\r\n-  border: none;\r\n-  border-radius: 6px;\r\n-  padding: 8px 18px;\r\n-  font-size: 1rem;\r\n-  cursor: pointer;\r\n-  text-decoration: none;\r\n-  transition: background 0.2s;\r\n-  z-index: 2;\r\n-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);\r\n-  font-weight: 500;\r\n-}\r\n-.ver-productos-btn:hover {\r\n-  background: #166d13;\r\n-}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1750998129432,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,35 @@\n+h1{\r\n+    text-align: center;\r\n+    font-size: 40px;\r\n+    letter-spacing: 10px;\r\n+}\r\n+\r\n+.home-img-container {\r\n+  position: relative;\r\n+  display: inline-block;\r\n+}\r\n+.home-img-container img {\r\n+  display: block;\r\n+  width: 100%;\r\n+  border-radius: 12px;\r\n+}\r\n+.ver-productos-btn {\r\n+  position: absolute;\r\n+  top: 18px;\r\n+  left: 18px;\r\n+  background: #1a8917;\r\n+  color: #fff;\r\n+  border: none;\r\n+  border-radius: 6px;\r\n+  padding: 8px 18px;\r\n+  font-size: 1rem;\r\n+  cursor: pointer;\r\n+  text-decoration: none;\r\n+  transition: background 0.2s;\r\n+  z-index: 2;\r\n+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);\r\n+  font-weight: 500;\r\n+}\r\n+.ver-productos-btn:hover {\r\n+  background: #166d13;\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1750998140763,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,19 +1,5 @@\n-h1{\r\n-    text-align: center;\r\n-    font-size: 40px;\r\n-    letter-spacing: 10px;\r\n-}\r\n \r\n-.home-img-container {\r\n-  position: relative;\r\n-  display: inline-block;\r\n-}\r\n-.home-img-container img {\r\n-  display: block;\r\n-  width: 100%;\r\n-  border-radius: 12px;\r\n-}\r\n .ver-productos-btn {\r\n   position: absolute;\r\n   top: 18px;\r\n   left: 18px;\r\n"
+                },
+                {
+                    "date": 1750998405169,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,21 +0,0 @@\n-\r\n-.ver-productos-btn {\r\n-  position: absolute;\r\n-  top: 18px;\r\n-  left: 18px;\r\n-  background: #1a8917;\r\n-  color: #fff;\r\n-  border: none;\r\n-  border-radius: 6px;\r\n-  padding: 8px 18px;\r\n-  font-size: 1rem;\r\n-  cursor: pointer;\r\n-  text-decoration: none;\r\n-  transition: background 0.2s;\r\n-  z-index: 2;\r\n-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);\r\n-  font-weight: 500;\r\n-}\r\n-.ver-productos-btn:hover {\r\n-  background: #166d13;\r\n-}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1750998411886,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,47 @@\n+h1 {\r\n+  text-align: center;\r\n+  font-size: 40px;\r\n+  letter-spacing: 10px;\r\n+}\r\n+\r\n+.home-img-container {\r\n+  position: relative;\r\n+  width: 100%;\r\n+  max-width: 100%;\r\n+}\r\n+\r\n+.home-img-container img {\r\n+  display: block;\r\n+  width: 100%;\r\n+  height: auto;\r\n+  border-radius: 0;\r\n+}\r\n+\r\n+.botones-superpuestos {\r\n+  position: absolute;\r\n+  top: 18px;\r\n+  left: 18px;\r\n+  display: flex;\r\n+  gap: 10px;\r\n+  z-index: 2;\r\n+}\r\n+\r\n+.ver-productos-btn,\r\n+.login-btn {\r\n+  background: #1a8917;\r\n+  color: #fff;\r\n+  border: none;\r\n+  border-radius: 6px;\r\n+  padding: 8px 18px;\r\n+  font-size: 1rem;\r\n+  cursor: pointer;\r\n+  text-decoration: none;\r\n+  transition: background 0.2s;\r\n+  font-weight: 500;\r\n+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);\r\n+}\r\n+\r\n+.ver-productos-btn:hover,\r\n+.login-btn:hover {\r\n+  background: #166d13;\r\n+}\r\n"
+                },
+                {
+                    "date": 1750998508880,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,4 @@\n-h1 {\r\n-  text-align: center;\r\n-  font-size: 40px;\r\n-  letter-spacing: 10px;\r\n-}\r\n-\r\n .home-img-container {\r\n   position: relative;\r\n   width: 100%;\r\n   max-width: 100%;\r\n@@ -13,22 +7,15 @@\n .home-img-container img {\r\n   display: block;\r\n   width: 100%;\r\n   height: auto;\r\n-  border-radius: 0;\r\n+  border-radius: 0; /* Si quieres que no tenga bordes redondeados */\r\n }\r\n \r\n-.botones-superpuestos {\r\n+.ver-productos-btn {\r\n   position: absolute;\r\n   top: 18px;\r\n   left: 18px;\r\n-  display: flex;\r\n-  gap: 10px;\r\n-  z-index: 2;\r\n-}\r\n-\r\n-.ver-productos-btn,\r\n-.login-btn {\r\n   background: #1a8917;\r\n   color: #fff;\r\n   border: none;\r\n   border-radius: 6px;\r\n@@ -36,12 +23,11 @@\n   font-size: 1rem;\r\n   cursor: pointer;\r\n   text-decoration: none;\r\n   transition: background 0.2s;\r\n+  z-index: 2;\r\n+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);\r\n   font-weight: 500;\r\n-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);\r\n }\r\n-\r\n-.ver-productos-btn:hover,\r\n-.login-btn:hover {\r\n+.ver-productos-btn:hover {\r\n   background: #166d13;\r\n-}\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1750998517504,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,17 +1,5 @@\n-.home-img-container {\r\n-  position: relative;\r\n-  width: 100%;\r\n-  max-width: 100%;\r\n-}\r\n \r\n-.home-img-container img {\r\n-  display: block;\r\n-  width: 100%;\r\n-  height: auto;\r\n-  border-radius: 0; /* Si quieres que no tenga bordes redondeados */\r\n-}\r\n-\r\n .ver-productos-btn {\r\n   position: absolute;\r\n   top: 18px;\r\n   left: 18px;\r\n"
+                },
+                {
+                    "date": 1750998735115,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,28 @@\n+h1 {\r\n+  text-align: center;\r\n+  font-size: 40px;\r\n+  letter-spacing: 10px;\r\n+}\r\n \r\n-.ver-productos-btn {\r\n+.home-img-container {\r\n+  position: relative;\r\n+  width: 100%;\r\n+  max-width: 100%;\r\n+}\r\n+\r\n+.home-img-container img {\r\n+  display: block;\r\n+  width: 100%;\r\n+  height: auto;\r\n+  border-radius: 0;\r\n+}\r\n+\r\n+/* Estilos base compartidos */\r\n+.ver-productos-btn,\r\n+.login-btn {\r\n   position: absolute;\r\n   top: 18px;\r\n-  left: 18px;\r\n   background: #1a8917;\r\n   color: #fff;\r\n   border: none;\r\n   border-radius: 6px;\r\n@@ -11,11 +30,22 @@\n   font-size: 1rem;\r\n   cursor: pointer;\r\n   text-decoration: none;\r\n   transition: background 0.2s;\r\n-  z-index: 2;\r\n+  font-weight: 500;\r\n   box-shadow: 0 2px 8px rgba(0,0,0,0.08);\r\n-  font-weight: 500;\r\n }\r\n-.ver-productos-btn:hover {\r\n+\r\n\\ No newline at end of file\n+/* Posición específica de cada botón */\r\n+.ver-productos-btn {\r\n+  left: 18px;\r\n+}\r\n+\r\n+.login-btn {\r\n+  left: 160px; /* Puedes ajustar esto según el tamaño del botón anterior */\r\n+}\r\n+\r\n+/* Hover */\r\n+.ver-productos-btn:hover,\r\n+.login-btn:hover {\r\n   background: #166d13;\r\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1750999029062,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,5 +47,21 @@\n /* Hover */\r\n .ver-productos-btn:hover,\r\n .login-btn:hover {\r\n   background: #166d13;\r\n-}\n\\ No newline at end of file\n+}\r\n+\r\n+.registro-link {\r\n+  position: absolute;\r\n+  top: 60px; /* Colocado debajo del botón Iniciar sesión */\r\n+  left: 160px; /* Igual que el botón login para alinearlo */\r\n+  font-size: 0.9rem;\r\n+  color: #1a8917;\r\n+  text-decoration: underline;\r\n+  cursor: pointer;\r\n+  z-index: 2;\r\n+  transition: color 0.2s;\r\n+}\r\n+\r\n+.registro-link:hover {\r\n+  color: #166d13;\r\n+}\r\n"
+                },
+                {
+                    "date": 1750999055180,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,6 +62,6 @@\n   transition: color 0.2s;\r\n }\r\n \r\n .registro-link:hover {\r\n-  color: #166d13;\r\n+  color: #;\r\n }\r\n"
+                },
+                {
+                    "date": 1750999062771,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,6 +62,6 @@\n   transition: color 0.2s;\r\n }\r\n \r\n .registro-link:hover {\r\n-  color: #;\r\n+  color: black;\r\n }\r\n"
+                },
+                {
+                    "date": 1750999075774,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,9 +54,9 @@\n   position: absolute;\r\n   top: 60px; /* Colocado debajo del botón Iniciar sesión */\r\n   left: 160px; /* Igual que el botón login para alinearlo */\r\n   font-size: 0.9rem;\r\n-  color: #1a8917;\r\n+  color: blck;\r\n   text-decoration: underline;\r\n   cursor: pointer;\r\n   z-index: 2;\r\n   transition: color 0.2s;\r\n"
+                },
+                {
+                    "date": 1750999585001,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,19 +49,7 @@\n .login-btn:hover {\r\n   background: #166d13;\r\n }\r\n \r\n-.registro-link {\r\n-  position: absolute;\r\n-  top: 60px; /* Colocado debajo del botón Iniciar sesión */\r\n-  left: 160px; /* Igual que el botón login para alinearlo */\r\n-  font-size: 0.9rem;\r\n-  color: blck;\r\n-  text-decoration: underline;\r\n-  cursor: pointer;\r\n-  z-index: 2;\r\n-  transition: color 0.2s;\r\n-}\r\n-\r\n-.registro-link:hover {\r\n-  color: black;\r\n-}\r\n+<a routerLink=\"/registro\" class=\"registro-link\">\r\n+  ¿No tienes cuenta? <span class=\"subrayado\">Regístrate</span>\r\n+</a>\r\n"
+                },
+                {
+                    "date": 1750999685742,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,7 +49,23 @@\n .login-btn:hover {\r\n   background: #166d13;\r\n }\r\n \r\n-<a routerLink=\"/registro\" class=\"registro-link\">\r\n-  ¿No tienes cuenta? <span class=\"subrayado\">Regístrate</span>\r\n-</a>\r\n+.registro-link {\r\n+  position: absolute;\r\n+  top: 60px;\r\n+  left: 160px;\r\n+  font-size: 0.9rem;\r\n+  color: #1a8917;\r\n+  text-decoration: none; /* Elimina subrayado global */\r\n+  cursor: pointer;\r\n+  z-index: 2;\r\n+}\r\n+\r\n+.registro-link:hover .subrayado {\r\n+  color: #166d13;\r\n+}\r\n+\r\n+/* Solo subrayar la palabra \"Regístrate\" */\r\n+.subrayado {\r\n+  text-decoration: underline;\r\n+}\r\n"
+                },
+                {
+                    "date": 1750999857623,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,9 +61,9 @@\n   z-index: 2;\r\n }\r\n \r\n .registro-link:hover .subrayado {\r\n-  color: #166d13;\r\n+  color:;\r\n }\r\n \r\n /* Solo subrayar la palabra \"Regístrate\" */\r\n .subrayado {\r\n"
+                },
+                {
+                    "date": 1750999876908,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,9 +61,9 @@\n   z-index: 2;\r\n }\r\n \r\n .registro-link:hover .subrayado {\r\n-  color:;\r\n+  color: #166d13;\r\n }\r\n \r\n /* Solo subrayar la palabra \"Regístrate\" */\r\n .subrayado {\r\n"
+                },
+                {
+                    "date": 1750999886921,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,9 +54,9 @@\n   position: absolute;\r\n   top: 60px;\r\n   left: 160px;\r\n   font-size: 0.9rem;\r\n-  color: #1a8917;\r\n+  color: ;\r\n   text-decoration: none; /* Elimina subrayado global */\r\n   cursor: pointer;\r\n   z-index: 2;\r\n }\r\n"
+                },
+                {
+                    "date": 1750999892356,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,9 +54,9 @@\n   position: absolute;\r\n   top: 60px;\r\n   left: 160px;\r\n   font-size: 0.9rem;\r\n-  color: ;\r\n+  color: black;\r\n   text-decoration: none; /* Elimina subrayado global */\r\n   cursor: pointer;\r\n   z-index: 2;\r\n }\r\n"
+                },
+                {
+                    "date": 1750999905646,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,9 +61,9 @@\n   z-index: 2;\r\n }\r\n \r\n .registro-link:hover .subrayado {\r\n-  color: #166d13;\r\n+  color: #000000;\r\n }\r\n \r\n /* Solo subrayar la palabra \"Regístrate\" */\r\n .subrayado {\r\n"
+                },
+                {
+                    "date": 1750999916017,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,9 @@\n \r\n /* Hover */\r\n .ver-productos-btn:hover,\r\n .login-btn:hover {\r\n-  background: #166d13;\r\n+  background: #000000;\r\n }\r\n \r\n .registro-link {\r\n   position: absolute;\r\n"
+                },
+                {
+                    "date": 1750999930391,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,9 @@\n \r\n /* Hover */\r\n .ver-productos-btn:hover,\r\n .login-btn:hover {\r\n-  background: #000000;\r\n+  background: #166d13;\r\n }\r\n \r\n .registro-link {\r\n   position: absolute;\r\n"
+                },
+                {
+                    "date": 1750999940563,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n .ver-productos-btn,\r\n .login-btn {\r\n   position: absolute;\r\n   top: 18px;\r\n-  background: #1a8917;\r\n+  background: #000000;\r\n   color: #fff;\r\n   border: none;\r\n   border-radius: 6px;\r\n   padding: 8px 18px;\r\n"
+                }
+            ],
+            "date": 1750959725868,
+            "name": "Commit-0",
+            "content": "h1{\r\n    text-align: center;\r\n    font-size: 40px;\r\n    letter-spacing: 10px;\r\n}\r\n\r\n.home-img-container {\r\n  position: relative;\r\n  display: inline-block;\r\n}\r\n.home-img-container img {\r\n  display: block;\r\n  width: 100%;\r\n  border-radius: 12px;\r\n}\r\n.ver-productos-btn {\r\n  position: absolute;\r\n  top: 18px;\r\n  right: 18px;\r\n  background: #1a8917;\r\n  color: #fff;\r\n  border: none;\r\n  border-radius: 6px;\r\n  padding: 8px 18px;\r\n  font-size: 1rem;\r\n  cursor: pointer;\r\n  text-decoration: none;\r\n  transition: background 0.2s;\r\n  z-index: 2;\r\n  box-shadow: 0 2px 8px rgba(0,0,0,0.08);\r\n  font-weight: 500;\r\n}\r\n.ver-productos-btn:hover {\r\n  background: #166d13;\r\n}"
+        }
+    ]
+}

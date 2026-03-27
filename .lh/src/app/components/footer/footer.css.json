@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/app/components/footer/footer.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1751029974907,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1751029974907,
+            "name": "Commit-0",
+            "content": "footer, h4 {\r\n  width: 100%;\r\n  position: relative;\r\n  left: 0;\r\n  bottom: 0;\r\n  margin: 0;\r\n}\r\n\r\nh4{\r\n    padding: 20px;\r\n    color: white;\r\n    background-color: black;\r\n    text-align: center ;\r\n}"
+        }
+    ]
+}

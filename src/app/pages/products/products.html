@@ -1,0 +1,11 @@
+<h1>Nuestros productos</h1>
+<div *ngIf="mensaje" class="mensaje-carrito">{{ mensaje }}</div>
+<section class="productos">
+  <article class="producto-card" *ngFor="let producto of productos; trackBy: trackById">
+    <img [src]="'/assets/' + producto.imagen" [alt]="producto.nombre">
+    <h3>{{producto.nombre}}</h3>
+    <p>{{producto.descripcion}}</p>
+    <strong>${{producto.precio}}</strong>
+    <button (click)="agregarAlCarrito(producto)">Agregar al carrito</button>
+  </article>
+</section>

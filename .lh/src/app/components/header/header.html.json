@@ -1,0 +1,46 @@
+{
+    "sourceFile": "src/app/components/header/header.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 7,
+            "patches": [
+                {
+                    "date": 1750942965627,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1750944345566,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,8 +17,9 @@\n                     <button (click)=\"cartService.addToCart(item.producto)\">+</button>\r\n                 </div>\r\n                 <div *ngIf=\"cartService.getCart().length > 0\">\r\n                     <strong>Total: ${{ cartService.getTotalPrice() }}</strong>\r\n+                    \r\n                 </div>\r\n             </div>\r\n         </div>\r\n     </nav>\r\n"
+                },
+                {
+                    "date": 1750944358658,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n                     <button (click)=\"cartService.addToCart(item.producto)\">+</button>\r\n                 </div>\r\n                 <div *ngIf=\"cartService.getCart().length > 0\">\r\n                     <strong>Total: ${{ cartService.getTotalPrice() }}</strong>\r\n-                    \r\n+                    <button>Pa</button>\r\n                 </div>\r\n             </div>\r\n         </div>\r\n     </nav>\r\n"
+                },
+                {
+                    "date": 1750945985903,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,10 @@\n                     <button (click)=\"cartService.addToCart(item.producto)\">+</button>\r\n                 </div>\r\n                 <div *ngIf=\"cartService.getCart().length > 0\">\r\n                     <strong>Total: ${{ cartService.getTotalPrice() }}</strong>\r\n-                    <button>Pa</button>\r\n+                    <button class=\"pagar-btn\" (click)=\"pagar()\">Pagar</button>\r\n+                    <div *ngIf=\"pagoExitoso\" class=\"pago-exitoso\">¡Pago exitoso!</div>\r\n                 </div>\r\n             </div>\r\n         </div>\r\n     </nav>\r\n"
+                },
+                {
+                    "date": 1750946171862,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,10 +17,9 @@\n                     <button (click)=\"cartService.addToCart(item.producto)\">+</button>\r\n                 </div>\r\n                 <div *ngIf=\"cartService.getCart().length > 0\">\r\n                     <strong>Total: ${{ cartService.getTotalPrice() }}</strong>\r\n-                    <button class=\"pagar-btn\" (click)=\"pagar()\">Pagar</button>\r\n-                    <div *ngIf=\"pagoExitoso\" class=\"pago-exitoso\">¡Pago exitoso!</div>\r\n+                    <button>Pagar</button>\r\n                 </div>\r\n             </div>\r\n         </div>\r\n     </nav>\r\n"
+                },
+                {
+                    "date": 1750950800274,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n                     <button (click)=\"cartService.addToCart(item.producto)\">+</button>\r\n                 </div>\r\n                 <div *ngIf=\"cartService.getCart().length > 0\">\r\n                     <strong>Total: ${{ cartService.getTotalPrice() }}</strong>\r\n-                    <button>Pagar</button>\r\n+                    \r\n                 </div>\r\n             </div>\r\n         </div>\r\n     </nav>\r\n"
+                },
+                {
+                    "date": 1750950873152,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,9 @@\n         <div class=\"carrito-container\">\r\n             <button class=\"carrito-btn\" (click)=\"mostrarCarrito = !mostrarCarrito\">\r\n                 🛒 <span class=\"carrito-cantidad\">{{ totalItems }}</span>\r\n             </button>\r\n+            <button class=\"pagar-btn-mini\" (click)=\"pagar()\">Pagar</button>\r\n             <div class=\"carrito-dropdown\" *ngIf=\"mostrarCarrito\">\r\n                 <div *ngIf=\"cartService.getCart().length === 0\">El carrito está vacío</div>\r\n                 <div *ngFor=\"let item of cartService.getCart()\">\r\n                     <span>{{item.producto.nombre}}</span>\r\n@@ -17,9 +18,8 @@\n                     <button (click)=\"cartService.addToCart(item.producto)\">+</button>\r\n                 </div>\r\n                 <div *ngIf=\"cartService.getCart().length > 0\">\r\n                     <strong>Total: ${{ cartService.getTotalPrice() }}</strong>\r\n-                    \r\n                 </div>\r\n             </div>\r\n         </div>\r\n     </nav>\r\n"
+                },
+                {
+                    "date": 1751028143795,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,8 +18,9 @@\n                     <button (click)=\"cartService.addToCart(item.producto)\">+</button>\r\n                 </div>\r\n                 <div *ngIf=\"cartService.getCart().length > 0\">\r\n                     <strong>Total: ${{ cartService.getTotalPrice() }}</strong>\r\n+                    <button class=\"vaciar-carrito-btn\" (click)=\"vaciarCarrito()\" title=\"Vaciar carrito\">🗑️</button>\r\n                 </div>\r\n             </div>\r\n         </div>\r\n     </nav>\r\n"
+                }
+            ],
+            "date": 1750942965627,
+            "name": "Commit-0",
+            "content": "<header>\r\n    <nav>\r\n        <a routerLink=\"/\">Inicio</a>\r\n        <a routerLink=\"/productos\">Productos</a>\r\n        <a routerLink=\"/nosotros\">Nosotros</a>\r\n        <a routerLink=\"/contacto\">Contacto</a>\r\n        <div class=\"carrito-container\">\r\n            <button class=\"carrito-btn\" (click)=\"mostrarCarrito = !mostrarCarrito\">\r\n                🛒 <span class=\"carrito-cantidad\">{{ totalItems }}</span>\r\n            </button>\r\n            <div class=\"carrito-dropdown\" *ngIf=\"mostrarCarrito\">\r\n                <div *ngIf=\"cartService.getCart().length === 0\">El carrito está vacío</div>\r\n                <div *ngFor=\"let item of cartService.getCart()\">\r\n                    <span>{{item.producto.nombre}}</span>\r\n                    <button (click)=\"cartService.removeFromCart(item.producto)\">-</button>\r\n                    <span>{{item.cantidad}}</span>\r\n                    <button (click)=\"cartService.addToCart(item.producto)\">+</button>\r\n                </div>\r\n                <div *ngIf=\"cartService.getCart().length > 0\">\r\n                    <strong>Total: ${{ cartService.getTotalPrice() }}</strong>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </nav>\r\n</header>\r\n"
+        }
+    ]
+}

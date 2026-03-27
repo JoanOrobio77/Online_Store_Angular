@@ -1,0 +1,26 @@
+{
+    "sourceFile": "src/app/pages/products/products.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1750945389921,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1751027444235,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,4 +51,22 @@\n }\r\n .producto-card button:hover {\r\n   background: #166d13;\r\n }\r\n+\r\n+.mensaje-carrito {\r\n+  background: #1a8917;\r\n+  color: #fff;\r\n+  padding: 12px 20px;\r\n+  border-radius: 6px;\r\n+  text-align: center;\r\n+  margin: 18px auto 10px auto;\r\n+  max-width: 400px;\r\n+  font-size: 1.1rem;\r\n+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);\r\n+  animation: fadeIn 0.3s;\r\n+}\r\n+\r\n+@keyframes fadeIn {\r\n+  from { opacity: 0; transform: translateY(-10px); }\r\n+  to { opacity: 1; transform: translateY(0); }\r\n+}\r\n"
+                },
+                {
+                    "date": 1751027992007,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,20 +53,23 @@\n   background: #166d13;\r\n }\r\n \r\n .mensaje-carrito {\r\n+  position: fixed;\r\n+  top: 50%;\r\n+  left: 50%;\r\n+  transform: translate(-50%, -50%);\r\n   background: #1a8917;\r\n   color: #fff;\r\n-  padding: 12px 20px;\r\n-  border-radius: 6px;\r\n+  padding: 18px 32px;\r\n+  border-radius: 10px;\r\n   text-align: center;\r\n-  margin: 18px auto 10px auto;\r\n-  max-width: 400px;\r\n-  font-size: 1.1rem;\r\n-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);\r\n+  font-size: 1.2rem;\r\n+  box-shadow: 0 4px 24px rgba(0,0,0,0.18);\r\n+  z-index: 1000;\r\n   animation: fadeIn 0.3s;\r\n }\r\n \r\n @keyframes fadeIn {\r\n-  from { opacity: 0; transform: translateY(-10px); }\r\n-  to { opacity: 1; transform: translateY(0); }\r\n+  from { opacity: 0; transform: translate(-50%, -60%); }\r\n+  to { opacity: 1; transform: translate(-50%, -50%); }\r\n }\r\n"
+                }
+            ],
+            "date": 1750945389921,
+            "name": "Commit-0",
+            "content": ".productos {\r\n  display: grid;\r\n  grid-template-columns: repeat(4, 1fr);\r\n  gap: 24px;\r\n  padding: 24px;\r\n}\r\n\r\n.producto-card {\r\n  background: #fff;\r\n  border-radius: 12px;\r\n  box-shadow: 0 2px 8px rgba(0,0,0,0.08);\r\n  padding: 20px;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  transition: box-shadow 0.2s;\r\n}\r\n.producto-card:hover {\r\n  box-shadow: 0 4px 16px rgba(0,0,0,0.15);\r\n}\r\n.producto-card img {\r\n  width: 100%;\r\n  max-width: 180px;\r\n  border-radius: 8px;\r\n  margin-bottom: 12px;\r\n}\r\n.producto-card h3 {\r\n  margin: 10px 0 6px 0;\r\n  font-size: 1.1rem;\r\n}\r\n.producto-card p {\r\n  font-size: 0.95rem;\r\n  color: #555;\r\n  margin-bottom: 8px;\r\n  text-align: center;\r\n}\r\n.producto-card strong {\r\n  color: #1a8917;\r\n  margin-bottom: 10px;\r\n  font-size: 1.1rem;\r\n}\r\n.producto-card button {\r\n  background: #1a8917;\r\n  color: #fff;\r\n  border: none;\r\n  border-radius: 6px;\r\n  padding: 8px 18px;\r\n  font-size: 1rem;\r\n  cursor: pointer;\r\n  transition: background 0.2s;\r\n}\r\n.producto-card button:hover {\r\n  background: #166d13;\r\n}\r\n"
+        }
+    ]
+}

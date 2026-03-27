@@ -1,0 +1,58 @@
+{
+    "sourceFile": "src/app/components/header/header.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 10,
+            "patches": [
+                {
+                    "date": 1750942956102,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1750942970656,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,8 +10,10 @@\n })\r\n export class Header {\r\n   constructor(public cartService: CartService) {}\r\n \r\n+  mostrarCarrito = false;\r\n+\r\n   get totalItems() {\r\n     return this.cartService.getTotalCount();\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1750943656575,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,12 @@\n import { Component } from '@angular/core';\r\n import { RouterModule } from '@angular/router';\r\n+import { CommonModule } from '@angular/common';\r\n import { CartService } from '../../services/cart';\r\n \r\n @Component({\r\n   selector: 'app-header',\r\n-  imports: [RouterModule],\r\n+  imports: [RouterModule, CommonModule],\r\n   templateUrl: './header.html',\r\n   styleUrl: './header.css'\r\n })\r\n export class Header {\r\n"
+                },
+                {
+                    "date": 1750945990924,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,20 @@\n export class Header {\r\n   constructor(public cartService: CartService) {}\r\n \r\n   mostrarCarrito = false;\r\n+  pagoExitoso = false;\r\n \r\n   get totalItems() {\r\n     return this.cartService.getTotalCount();\r\n   }\r\n+\r\n+  pagar() {\r\n+    this.pagoExitoso = true;\r\n+    setTimeout(() => {\r\n+      this.pagoExitoso = false;\r\n+      this.mostrarCarrito = false;\r\n+      // Opcional: limpiar el carrito si lo deseas\r\n+      // this.cartService.clearCart();\r\n+    }, 2000);\r\n+  }\r\n }\r\n"
+                },
+                {
+                    "date": 1750946171861,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,20 +12,9 @@\n export class Header {\r\n   constructor(public cartService: CartService) {}\r\n \r\n   mostrarCarrito = false;\r\n-  pagoExitoso = false;\r\n \r\n   get totalItems() {\r\n     return this.cartService.getTotalCount();\r\n   }\r\n-\r\n-  pagar() {\r\n-    this.pagoExitoso = true;\r\n-    setTimeout(() => {\r\n-      this.pagoExitoso = false;\r\n-      this.mostrarCarrito = false;\r\n-      // Opcional: limpiar el carrito si lo deseas\r\n-      // this.cartService.clearCart();\r\n-    }, 2000);\r\n-  }\r\n }\r\n"
+                },
+                {
+                    "date": 1750950880878,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,5 +16,9 @@\n \r\n   get totalItems() {\r\n     return this.cartService.getTotalCount();\r\n   }\r\n+\r\n+  pagar() {\r\n+    alert('¡Pago exitoso!');\r\n+  }\r\n }\r\n"
+                },
+                {
+                    "date": 1751028137893,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,5 +20,9 @@\n \r\n   pagar() {\r\n     alert('¡Pago exitoso!');\r\n   }\r\n+\r\n+  vaciarCarrito() {\r\n+    this.cartService.clearCart();\r\n+  }\r\n }\r\n"
+                },
+                {
+                    "date": 1751031021159,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n import { Component } from '@angular/core';\r\n import { RouterModule } from '@angular/router';\r\n import { CommonModule } from '@angular/common';\r\n import { CartService } from '../../services/cart';\r\n+import Swal from 'sweetalert2';\r\n \r\n @Component({\r\n   selector: 'app-header',\r\n   imports: [RouterModule, CommonModule],\r\n@@ -18,9 +19,14 @@\n     return this.cartService.getTotalCount();\r\n   }\r\n \r\n   pagar() {\r\n-    alert('¡Pago exitoso!');\r\n+    Swal.fire({\r\n+      icon: 'info',\r\n+      title: '¡Hola!',\r\n+      text: 'Para comprar debes ingresar a tu cuenta',\r\n+      confirmButtonText: 'Entendido'\r\n+    });\r\n   }\r\n \r\n   vaciarCarrito() {\r\n     this.cartService.clearCart();\r\n"
+                },
+                {
+                    "date": 1751031755304,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import { Component } from '@angular/core';\r\n import { RouterModule } from '@angular/router';\r\n import { CommonModule } from '@angular/common';\r\n import { CartService } from '../../services/cart';\r\n-import Swal from 'sweetalert2';\r\n+import * as Swal from 'sweetalert2';\r\n \r\n @Component({\r\n   selector: 'app-header',\r\n   imports: [RouterModule, CommonModule],\r\n"
+                },
+                {
+                    "date": 1751031763070,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import { Component } from '@angular/core';\r\n import { RouterModule } from '@angular/router';\r\n import { CommonModule } from '@angular/common';\r\n import { CartService } from '../../services/cart';\r\n-import * as Swal from 'sweetalert2';\r\n+import Swal from 'sweetalert2/dist/sweetalert2.all.js';\r\n \r\n @Component({\r\n   selector: 'app-header',\r\n   imports: [RouterModule, CommonModule],\r\n"
+                },
+                {
+                    "date": 1751031934633,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import { Component } from '@angular/core';\r\n import { RouterModule } from '@angular/router';\r\n import { CommonModule } from '@angular/common';\r\n import { CartService } from '../../services/cart';\r\n-import Swal from 'sweetalert2/dist/sweetalert2.all.js';\r\n+import Swal from 'sweetalert2';\r\n \r\n @Component({\r\n   selector: 'app-header',\r\n   imports: [RouterModule, CommonModule],\r\n"
+                }
+            ],
+            "date": 1750942956102,
+            "name": "Commit-0",
+            "content": "import { Component } from '@angular/core';\r\nimport { RouterModule } from '@angular/router';\r\nimport { CartService } from '../../services/cart';\r\n\r\n@Component({\r\n  selector: 'app-header',\r\n  imports: [RouterModule],\r\n  templateUrl: './header.html',\r\n  styleUrl: './header.css'\r\n})\r\nexport class Header {\r\n  constructor(public cartService: CartService) {}\r\n\r\n  get totalItems() {\r\n    return this.cartService.getTotalCount();\r\n  }\r\n}\r\n"
+        }
+    ]
+}

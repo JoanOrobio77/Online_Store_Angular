@@ -1,0 +1,18 @@
+{
+    "sourceFile": "README.md",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1774626989167,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1774626989167,
+            "name": "Commit-0",
+            "content": "# Bikes - Tienda de Bicicletas\r\n\r\n![Logo o Imagen del Proyecto](https://via.placeholder.com/800x200?text=Bikes+Store) <!-- Reemplaza con una imagen real si tienes una -->\r\n\r\n## Descripción\r\n\r\n**Bikes** es una aplicación web moderna desarrollada con Angular para una tienda de bicicletas. Ofrece una experiencia de usuario intuitiva para explorar productos, gestionar un carrito de compras, iniciar sesión y registrarse. La aplicación incluye renderizado del lado del servidor (SSR) para un mejor rendimiento y SEO.\r\n\r\n## Características\r\n\r\n- **Página de Inicio**: Bienvenida y navegación principal.\r\n- **Productos**: Catálogo de bicicletas con imágenes y detalles.\r\n- **Carrito de Compras**: Gestión de productos seleccionados.\r\n- **Autenticación**: Páginas de login y registro.\r\n- **Información**: Páginas de \"Acerca de\" y \"Contacto\".\r\n- **Responsive**: Diseño adaptable a diferentes dispositivos.\r\n- **SSR**: Renderizado del lado del servidor para optimización.\r\n\r\n## Tecnologías Utilizadas\r\n\r\n- **Framework**: Angular 20\r\n- **Lenguaje**: TypeScript\r\n- **Estilos**: CSS\r\n- **Librerías**:\r\n  - RxJS para manejo de observables\r\n  - SweetAlert2 para alertas y modales\r\n  - Angular SSR para renderizado del lado del servidor\r\n- **Herramientas de Desarrollo**:\r\n  - Angular CLI\r\n  - Jasmine y Karma para pruebas\r\n  - Esbuild para construcción\r\n\r\n## Instalación\r\n\r\nSigue estos pasos para configurar el proyecto en tu máquina local:\r\n\r\n1. **Clona el repositorio**:\r\n   ```bash\r\n   git clone https://github.com/tu-usuario/bikes.git\r\n   cd bikes\r\n   ```\r\n\r\n2. **Instala las dependencias**:\r\n   ```bash\r\n   npm install\r\n   ```\r\n\r\n3. **Ejecuta la aplicación en modo desarrollo**:\r\n   ```bash\r\n   npm start\r\n   ```\r\n   La aplicación estará disponible en `http://localhost:4200`.\r\n\r\n4. **Construye para producción**:\r\n   ```bash\r\n   npm run build\r\n   ```\r\n\r\n5. **Ejecuta en modo SSR**:\r\n   ```bash\r\n   npm run serve:ssr:bikes\r\n   ```\r\n\r\n## Uso\r\n\r\n- Navega por las páginas usando el menú de navegación.\r\n- Agrega productos al carrito desde la página de productos.\r\n- Inicia sesión o regístrate para acceder a funciones adicionales.\r\n- La aplicación es responsive y funciona en móviles y escritorio.\r\n\r\n## Pruebas\r\n\r\nEjecuta las pruebas unitarias con:\r\n```bash\r\nnpm test\r\n```\r\n\r\n## Contribución\r\n\r\n¡Las contribuciones son bienvenidas! Para contribuir:\r\n\r\n1. Haz un fork del proyecto.\r\n2. Crea una rama para tu feature (`git checkout -b feature/nueva-funcionalidad`).\r\n3. Realiza tus cambios y confirma (`git commit -am 'Agrega nueva funcionalidad'`).\r\n4. Empuja a la rama (`git push origin feature/nueva-funcionalidad`).\r\n5. Abre un Pull Request.\r\n\r\n## Licencia\r\n\r\nEste proyecto es privado y no tiene una licencia pública especificada.\r\n\r\n## Contacto\r\n\r\nPara preguntas o soporte, contacta al equipo de desarrollo.\r\n\r\n---\r\n\r\n*Desarrollado con ❤️ usando Angular.*"
+        }
+    ]
+}

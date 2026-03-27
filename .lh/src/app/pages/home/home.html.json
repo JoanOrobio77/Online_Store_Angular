@@ -1,0 +1,190 @@
+{
+    "sourceFile": "src/app/pages/home/home.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 43,
+            "patches": [
+                {
+                    "date": 1750884690539,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1750884701735,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,2 @@\n <h1> TU PRÓXIMA AVENTURA</h1>\r\n-<img src=\"//bikeNosotros.jpg\" alt=\"Bike\">\n\\ No newline at end of file\n+<img src=\"/as /bikeNosotros.jpg\" alt=\"Bike\">\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1750884708143,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,3 @@\n <h1> TU PRÓXIMA AVENTURA</h1>\r\n-<img src=\"/as /bikeNosotros.jpg\" alt=\"Bike\">\n\\ No newline at end of file\n+<img src=\"/as\r\n+/bikeNosotros.jpg\" alt=\"Bike\">\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1750884719228,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,2 @@\n <h1> TU PRÓXIMA AVENTURA</h1>\r\n-<img src=\"/as\r\n-/bikeNosotros.jpg\" alt=\"Bike\">\n\\ No newline at end of file\n+<img src=\"/asse/bikeNosotros.jpg\" alt=\"Bike\">\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1750884724268,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,2 @@\n <h1> TU PRÓXIMA AVENTURA</h1>\r\n-<img src=\"/asse/bikeNosotros.jpg\" alt=\"Bike\">\n\\ No newline at end of file\n+<img src=\"/assets//bikeNosotros.jpg\" alt=\"Bike\">\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1750884729762,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,2 @@\n <h1> TU PRÓXIMA AVENTURA</h1>\r\n-<img src=\"/assets//bikeNosotros.jpg\" alt=\"Bike\">\n\\ No newline at end of file\n+<img src=\"/assets/bikeNosotros.jpg\" alt=\"Bike\">\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1750958755351,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,2 @@\n <h1> TU PRÓXIMA AVENTURA</h1>\r\n-<img src=\"/assets/bikeNosotros.jpg\" alt=\"Bike\">\n\\ No newline at end of file\n+<img src=\"/assets/bikeNosotros.jpg\" alt=\"Bike\">\r\n"
+                },
+                {
+                    "date": 1750958762926,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,5 @@\n <h1> TU PRÓXIMA AVENTURA</h1>\r\n <img src=\"/assets/bikeNosotros.jpg\" alt=\"Bike\">\r\n+<nav>\r\n+    bu\r\n+</nav>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1750958768095,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n <h1> TU PRÓXIMA AVENTURA</h1>\r\n <img src=\"/assets/bikeNosotros.jpg\" alt=\"Bike\">\r\n <nav>\r\n-    bu\r\n+    <button class=\"\"></button>\r\n </nav>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1750958774501,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n <h1> TU PRÓXIMA AVENTURA</h1>\r\n <img src=\"/assets/bikeNosotros.jpg\" alt=\"Bike\">\r\n <nav>\r\n-    <button class=\"\"></button>\r\n+    <button class=\"Iniciar\"></button>\r\n </nav>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1750958780245,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n <h1> TU PRÓXIMA AVENTURA</h1>\r\n <img src=\"/assets/bikeNosotros.jpg\" alt=\"Bike\">\r\n <nav>\r\n-    <button class=\"Iniciar\"></button>\r\n+    <button class=\"Iniciar Sesi\"></button>\r\n </nav>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1750958799515,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,2 @@\n <h1> TU PRÓXIMA AVENTURA</h1>\r\n <img src=\"/assets/bikeNosotros.jpg\" alt=\"Bike\">\r\n-<nav>\r\n-    <button class=\"Iniciar Sesi\"></button>\r\n-</nav>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1750959717874,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,5 @@\n <h1> TU PRÓXIMA AVENTURA</h1>\r\n-<img src=\"/assets/bikeNosotros.jpg\" alt=\"Bike\">\r\n+<div class=\"home-img-container\">\r\n+  <img src=\"/assets/bikeNosotros.jpg\" alt=\"Bike\">\r\n+  <a routerLink=\"/productos\" class=\"ver-productos-btn\">Ver productos</a>\r\n+</div>\r\n"
+                },
+                {
+                    "date": 1750959805408,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,2 @@\n <h1> TU PRÓXIMA AVENTURA</h1>\r\n-<div class=\"home-img-container\">\r\n-  <img src=\"/assets/bikeNosotros.jpg\" alt=\"Bike\">\r\n-  <a routerLink=\"/productos\" class=\"ver-productos-btn\">Ver productos</a>\r\n-</div>\r\n+<img src=\"/assets/bikeNosotros.jpg\" alt=\"Bike\">\r\n"
+                },
+                {
+                    "date": 1750959857156,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,5 @@\n <h1> TU PRÓXIMA AVENTURA</h1>\r\n-<img src=\"/assets/bikeNosotros.jpg\" alt=\"Bike\">\r\n+<div class=\"home-img-container\">\r\n+  <img src=\"/assets/bikeNosotros.jpg\" alt=\"Bike\">\r\n+  <a routerLink=\"/productos\" class=\"ver-productos-btn\">Ver productos</a>\r\n+</div>\r\n"
+                },
+                {
+                    "date": 1750960231919,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,2 @@\n <h1> TU PRÓXIMA AVENTURA</h1>\r\n-<div class=\"home-img-container\">\r\n-  <img src=\"/assets/bikeNosotros.jpg\" alt=\"Bike\">\r\n-  <a routerLink=\"/productos\" class=\"ver-productos-btn\">Ver productos</a>\r\n-</div>\r\n+<img src=\"/assets/bikeNosotros.jpg\" alt=\"Bike\">\r\n"
+                },
+                {
+                    "date": 1750960317831,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,5 @@\n <h1> TU PRÓXIMA AVENTURA</h1>\r\n-<img src=\"/assets/bikeNosotros.jpg\" alt=\"Bike\">\r\n+<div class=\"home-img-container\">\r\n+  <img src=\"/assets/bikeNosotros.jpg\" alt=\"Bike\">\r\n+  <a routerLink=\"/productos\" class=\"ver-productos-btn\">Ver productos</a>\r\n+</div>\r\n"
+                },
+                {
+                    "date": 1750997877258,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n <h1> TU PRÓXIMA AVENTURA</h1>\r\n <div class=\"home-img-container\">\r\n-  <img src=\"/assets/bikeNosotros.jpg\" alt=\"Bike\">\r\n+\r\n   <a routerLink=\"/productos\" class=\"ver-productos-btn\">Ver productos</a>\r\n </div>\r\n"
+                },
+                {
+                    "date": 1750997883770,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n <h1> TU PRÓXIMA AVENTURA</h1>\r\n+  <img src=\"/assets/bikeNosotros.jpg\" alt=\"Bike\">\r\n <div class=\"home-img-container\">\r\n \r\n   <a routerLink=\"/productos\" class=\"ver-productos-btn\">Ver productos</a>\r\n </div>\r\n"
+                },
+                {
+                    "date": 1750997917269,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n <h1> TU PRÓXIMA AVENTURA</h1>\r\n-  <img src=\"/assets/bikeNosotros.jpg\" alt=\"Bike\">\r\n+\r\n <div class=\"home-img-container\">\r\n \r\n   <a routerLink=\"/productos\" class=\"ver-productos-btn\">Ver productos</a>\r\n </div>\r\n"
+                },
+                {
+                    "date": 1750997934583,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,4 +3,5 @@\n <div class=\"home-img-container\">\r\n \r\n   <a routerLink=\"/productos\" class=\"ver-productos-btn\">Ver productos</a>\r\n </div>\r\n+  \r\n"
+                },
+                {
+                    "date": 1750997942476,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n <h1> TU PRÓXIMA AVENTURA</h1>\r\n \r\n <div class=\"home-img-container\">\r\n+  \r\n \r\n   <a routerLink=\"/productos\" class=\"ver-productos-btn\">Ver productos</a>\r\n </div>\r\n   \r\n"
+                },
+                {
+                    "date": 1750997948023,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,7 @@\n <h1> TU PRÓXIMA AVENTURA</h1>\r\n \r\n <div class=\"home-img-container\">\r\n-  \r\n \r\n   <a routerLink=\"/productos\" class=\"ver-productos-btn\">Ver productos</a>\r\n </div>\r\n   \r\n"
+                },
+                {
+                    "date": 1750997958288,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,6 @@\n <h1> TU PRÓXIMA AVENTURA</h1>\r\n-\r\n <div class=\"home-img-container\">\r\n-\r\n+  <img src=\"/assets/bikeNosotros.jpg\" alt=\"Bike\">\r\n   <a routerLink=\"/productos\" class=\"ver-productos-btn\">Ver productos</a>\r\n </div>\r\n   \r\n"
+                },
+                {
+                    "date": 1750998322009,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n <h1> TU PRÓXIMA AVENTURA</h1>\r\n <div class=\"home-img-container\">\r\n   <img src=\"/assets/bikeNosotros.jpg\" alt=\"Bike\">\r\n   <a routerLink=\"/productos\" class=\"ver-productos-btn\">Ver productos</a>\r\n+  \r\n </div>\r\n   \r\n"
+                },
+                {
+                    "date": 1750998707627,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <h1> TU PRÓXIMA AVENTURA</h1>\r\n <div class=\"home-img-container\">\r\n   <img src=\"/assets/bikeNosotros.jpg\" alt=\"Bike\">\r\n   <a routerLink=\"/productos\" class=\"ver-productos-btn\">Ver productos</a>\r\n-  \r\n+    <a routerLink=\"/login\" class=\"login-btn\">Iniciar sesión</a>\r\n </div>\r\n   \r\n"
+                },
+                {
+                    "date": 1750999014624,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n <h1> TU PRÓXIMA AVENTURA</h1>\r\n <div class=\"home-img-container\">\r\n   <img src=\"/assets/bikeNosotros.jpg\" alt=\"Bike\">\r\n   <a routerLink=\"/productos\" class=\"ver-productos-btn\">Ver productos</a>\r\n-    <a routerLink=\"/login\" class=\"login-btn\">Iniciar sesión</a>\r\n+  <a routerLink=\"/login\" class=\"login-btn\">Iniciar sesión</a>\r\n+  \r\n </div>\r\n   \r\n"
+                },
+                {
+                    "date": 1750999123538,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,7 +2,7 @@\n <div class=\"home-img-container\">\r\n   <img src=\"/assets/bikeNosotros.jpg\" alt=\"Bike\">\r\n   <a routerLink=\"/productos\" class=\"ver-productos-btn\">Ver productos</a>\r\n   <a routerLink=\"/login\" class=\"login-btn\">Iniciar sesión</a>\r\n-  \r\n+  <a routerLink=\"/registro\" class=\"registro-link\"> Regístrate</a>\r\n </div>\r\n   \r\n"
+                },
+                {
+                    "date": 1750999129123,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,7 +2,7 @@\n <div class=\"home-img-container\">\r\n   <img src=\"/assets/bikeNosotros.jpg\" alt=\"Bike\">\r\n   <a routerLink=\"/productos\" class=\"ver-productos-btn\">Ver productos</a>\r\n   <a routerLink=\"/login\" class=\"login-btn\">Iniciar sesión</a>\r\n-  <a routerLink=\"/registro\" class=\"registro-link\"> Regístrate</a>\r\n+  <a routerLink=\"/registro\" class=\"registro-link\">Regístrate</a>\r\n </div>\r\n   \r\n"
+                },
+                {
+                    "date": 1750999143791,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,7 +2,7 @@\n <div class=\"home-img-container\">\r\n   <img src=\"/assets/bikeNosotros.jpg\" alt=\"Bike\">\r\n   <a routerLink=\"/productos\" class=\"ver-productos-btn\">Ver productos</a>\r\n   <a routerLink=\"/login\" class=\"login-btn\">Iniciar sesión</a>\r\n-  <a routerLink=\"/registro\" class=\"registro-link\">Regístrate</a>\r\n+  <a routerLink=\"/registro\" class=\"registro-link\" p>Regístrate</a>\r\n </div>\r\n   \r\n"
+                },
+                {
+                    "date": 1750999235977,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,7 +2,7 @@\n <div class=\"home-img-container\">\r\n   <img src=\"/assets/bikeNosotros.jpg\" alt=\"Bike\">\r\n   <a routerLink=\"/productos\" class=\"ver-productos-btn\">Ver productos</a>\r\n   <a routerLink=\"/login\" class=\"login-btn\">Iniciar sesión</a>\r\n-  <a routerLink=\"/registro\" class=\"registro-link\" p>Regístrate</a>\r\n+  <a routerLink=\"/registro\" class=\"registro-link\"> pRegístrate</a>\r\n </div>\r\n   \r\n"
+                },
+                {
+                    "date": 1750999242440,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,7 +2,7 @@\n <div class=\"home-img-container\">\r\n   <img src=\"/assets/bikeNosotros.jpg\" alt=\"Bike\">\r\n   <a routerLink=\"/productos\" class=\"ver-productos-btn\">Ver productos</a>\r\n   <a routerLink=\"/login\" class=\"login-btn\">Iniciar sesión</a>\r\n-  <a routerLink=\"/registro\" class=\"registro-link\"> pRegístrate</a>\r\n+  <a routerLink=\"/registro\" class=\"registro-link\"> <p>No</p>Regístrate</a>\r\n </div>\r\n   \r\n"
+                },
+                {
+                    "date": 1750999249979,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,7 +2,7 @@\n <div class=\"home-img-container\">\r\n   <img src=\"/assets/bikeNosotros.jpg\" alt=\"Bike\">\r\n   <a routerLink=\"/productos\" class=\"ver-productos-btn\">Ver productos</a>\r\n   <a routerLink=\"/login\" class=\"login-btn\">Iniciar sesión</a>\r\n-  <a routerLink=\"/registro\" class=\"registro-link\"> <p>No</p>Regístrate</a>\r\n+  <a routerLink=\"/registro\" class=\"registro-link\"> <p>No tienes</p>Regístrate</a>\r\n </div>\r\n   \r\n"
+                },
+                {
+                    "date": 1750999259887,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,7 +2,7 @@\n <div class=\"home-img-container\">\r\n   <img src=\"/assets/bikeNosotros.jpg\" alt=\"Bike\">\r\n   <a routerLink=\"/productos\" class=\"ver-productos-btn\">Ver productos</a>\r\n   <a routerLink=\"/login\" class=\"login-btn\">Iniciar sesión</a>\r\n-  <a routerLink=\"/registro\" class=\"registro-link\"> <p>No tienes</p>Regístrate</a>\r\n+  <a routerLink=\"/registro\" class=\"registro-link\"> <p>N</p>Regístrate</a>\r\n </div>\r\n   \r\n"
+                },
+                {
+                    "date": 1750999271144,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,7 +2,7 @@\n <div class=\"home-img-container\">\r\n   <img src=\"/assets/bikeNosotros.jpg\" alt=\"Bike\">\r\n   <a routerLink=\"/productos\" class=\"ver-productos-btn\">Ver productos</a>\r\n   <a routerLink=\"/login\" class=\"login-btn\">Iniciar sesión</a>\r\n-  <a routerLink=\"/registro\" class=\"registro-link\"> <p>N</p>Regístrate</a>\r\n+  <a routerLink=\"/registro\" class=\"registro-link\"> <Regístrate></Regístrate</a>\r\n </div>\r\n   \r\n"
+                },
+                {
+                    "date": 1750999276874,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,7 +2,7 @@\n <div class=\"home-img-container\">\r\n   <img src=\"/assets/bikeNosotros.jpg\" alt=\"Bike\">\r\n   <a routerLink=\"/productos\" class=\"ver-productos-btn\">Ver productos</a>\r\n   <a routerLink=\"/login\" class=\"login-btn\">Iniciar sesión</a>\r\n-  <a routerLink=\"/registro\" class=\"registro-link\"> <Regístrate></Regístrate</a>\r\n+  <a routerLink=\"/registro\" class=\"registro-link\"> <p></p>Regístrate</a>\r\n </div>\r\n   \r\n"
+                },
+                {
+                    "date": 1750999282346,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,7 +2,7 @@\n <div class=\"home-img-container\">\r\n   <img src=\"/assets/bikeNosotros.jpg\" alt=\"Bike\">\r\n   <a routerLink=\"/productos\" class=\"ver-productos-btn\">Ver productos</a>\r\n   <a routerLink=\"/login\" class=\"login-btn\">Iniciar sesión</a>\r\n-  <a routerLink=\"/registro\" class=\"registro-link\"> <p></p>Regístrate</a>\r\n+  <a routerLink=\"/registro\" class=\"registro-link\"> Regístrate</a>\r\n </div>\r\n   \r\n"
+                },
+                {
+                    "date": 1750999288565,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,7 +2,7 @@\n <div class=\"home-img-container\">\r\n   <img src=\"/assets/bikeNosotros.jpg\" alt=\"Bike\">\r\n   <a routerLink=\"/productos\" class=\"ver-productos-btn\">Ver productos</a>\r\n   <a routerLink=\"/login\" class=\"login-btn\">Iniciar sesión</a>\r\n-  <a routerLink=\"/registro\" class=\"registro-link\"> Regístrate</a>\r\n+  <a routerLink=\"/registro\" class=\"registro-link\">Regístrate</a>\r\n </div>\r\n   \r\n"
+                },
+                {
+                    "date": 1750999600023,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,7 +2,7 @@\n <div class=\"home-img-container\">\r\n   <img src=\"/assets/bikeNosotros.jpg\" alt=\"Bike\">\r\n   <a routerLink=\"/productos\" class=\"ver-productos-btn\">Ver productos</a>\r\n   <a routerLink=\"/login\" class=\"login-btn\">Iniciar sesión</a>\r\n-  <a routerLink=\"/registro\" class=\"registro-link\">Regístrate</a>\r\n+ \r\n </div>\r\n   \r\n"
+                },
+                {
+                    "date": 1750999609034,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,7 +2,9 @@\n <div class=\"home-img-container\">\r\n   <img src=\"/assets/bikeNosotros.jpg\" alt=\"Bike\">\r\n   <a routerLink=\"/productos\" class=\"ver-productos-btn\">Ver productos</a>\r\n   <a routerLink=\"/login\" class=\"login-btn\">Iniciar sesión</a>\r\n- \r\n+  <a routerLink=\"/registro\" class=\"registro-link\">\r\n+  ¿No tienes cuenta? <span class=\"subrayado\">Regístrate</span>\r\n+</a>\r\n </div>\r\n   \r\n"
+                },
+                {
+                    "date": 1750999638013,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,7 @@\n <div class=\"home-img-container\">\r\n   <img src=\"/assets/bikeNosotros.jpg\" alt=\"Bike\">\r\n   <a routerLink=\"/productos\" class=\"ver-productos-btn\">Ver productos</a>\r\n   <a routerLink=\"/login\" class=\"login-btn\">Iniciar sesión</a>\r\n-  <a routerLink=\"/registro\" class=\"registro-link\">\r\n-  ¿No tienes cuenta? <span class=\"subrayado\">Regístrate</span>\r\n-</a>\r\n+  \r\n </div>\r\n   \r\n"
+                },
+                {
+                    "date": 1750999711305,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,7 +2,7 @@\n <div class=\"home-img-container\">\r\n   <img src=\"/assets/bikeNosotros.jpg\" alt=\"Bike\">\r\n   <a routerLink=\"/productos\" class=\"ver-productos-btn\">Ver productos</a>\r\n   <a routerLink=\"/login\" class=\"login-btn\">Iniciar sesión</a>\r\n-  \r\n+  <a routerLink=\"/registro\" class=\"registro-link\">jfhfhf ijidjijRegístrate</a>\r\n </div>\r\n   \r\n"
+                },
+                {
+                    "date": 1750999741372,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,7 +2,7 @@\n <div class=\"home-img-container\">\r\n   <img src=\"/assets/bikeNosotros.jpg\" alt=\"Bike\">\r\n   <a routerLink=\"/productos\" class=\"ver-productos-btn\">Ver productos</a>\r\n   <a routerLink=\"/login\" class=\"login-btn\">Iniciar sesión</a>\r\n-  <a routerLink=\"/registro\" class=\"registro-link\">jfhfhf ijidjijRegístrate</a>\r\n+\r\n </div>\r\n   \r\n"
+                },
+                {
+                    "date": 1750999757817,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,7 +2,10 @@\n <div class=\"home-img-container\">\r\n   <img src=\"/assets/bikeNosotros.jpg\" alt=\"Bike\">\r\n   <a routerLink=\"/productos\" class=\"ver-productos-btn\">Ver productos</a>\r\n   <a routerLink=\"/login\" class=\"login-btn\">Iniciar sesión</a>\r\n+  <a routerLink=\"/registro\" class=\"registro-link\">\r\n+    ¿No tienes cuenta? <span class=\"subrayado\">Regístrate</span>\r\n+  </a>\r\n \r\n </div>\r\n   \r\n"
+                }
+            ],
+            "date": 1750884690539,
+            "name": "Commit-0",
+            "content": "<h1> TU PRÓXIMA AVENTURA</h1>\r\n<img src=\"//bikeNosotros.jpg\" alt=\"Bike\">"
+        }
+    ]
+}

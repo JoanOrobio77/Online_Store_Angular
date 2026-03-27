@@ -1,0 +1,50 @@
+{
+    "sourceFile": "src/app/components/header/header.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 8,
+            "patches": [
+                {
+                    "date": 1750943023175,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1750945109371,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,9 @@\n     background: none;\r\n     border: none;\r\n     color: white;\r\n     font-size: 1.5rem;\r\n-    cursor: pointer;\r\n+    cursor: ;\r\n     position: relative;\r\n     display: flex;\r\n     align-items: center;\r\n }\r\n"
+                },
+                {
+                    "date": 1750945142887,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,9 @@\n     background: none;\r\n     border: none;\r\n     color: white;\r\n     font-size: 1.5rem;\r\n-    cursor: ;\r\n+    cursor: progress ;\r\n     position: relative;\r\n     display: flex;\r\n     align-items: center;\r\n }\r\n"
+                },
+                {
+                    "date": 1750945163582,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,9 @@\n     background: none;\r\n     border: none;\r\n     color: white;\r\n     font-size: 1.5rem;\r\n-    cursor: progress ;\r\n+    cursor: progress-;\r\n     position: relative;\r\n     display: flex;\r\n     align-items: center;\r\n }\r\n"
+                },
+                {
+                    "date": 1750945181569,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,9 @@\n     background: none;\r\n     border: none;\r\n     color: white;\r\n     font-size: 1.5rem;\r\n-    cursor: progress-;\r\n+    cursor: pointer;\r\n     position: relative;\r\n     display: flex;\r\n     align-items: center;\r\n }\r\n"
+                },
+                {
+                    "date": 1750945999187,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -79,5 +79,30 @@\n     display: block;\r\n     margin-top: 10px;\r\n     text-align: right;\r\n     font-size: 1.1rem;\r\n+}\r\n+.pagar-btn {\r\n+    background: #007bff;\r\n+    color: #fff;\r\n+    border: none;\r\n+    border-radius: 6px;\r\n+    padding: 8px 18px;\r\n+    font-size: 1rem;\r\n+    cursor: pointer;\r\n+    margin-top: 10px;\r\n+    transition: background 0.2s;\r\n+    width: 100%;\r\n+}\r\n+.pagar-btn:hover {\r\n+    background: #0056b3;\r\n+}\r\n+.pago-exitoso {\r\n+    color: #1a8917;\r\n+    background: #e6f9ec;\r\n+    border-radius: 6px;\r\n+    padding: 8px 0;\r\n+    margin-top: 10px;\r\n+    text-align: center;\r\n+    font-weight: bold;\r\n+    font-size: 1.1rem;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1750946171858,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -79,30 +79,5 @@\n     display: block;\r\n     margin-top: 10px;\r\n     text-align: right;\r\n     font-size: 1.1rem;\r\n-}\r\n-.pagar-btn {\r\n-    background: #007bff;\r\n-    color: #fff;\r\n-    border: none;\r\n-    border-radius: 6px;\r\n-    padding: 8px 18px;\r\n-    font-size: 1rem;\r\n-    cursor: pointer;\r\n-    margin-top: 10px;\r\n-    transition: background 0.2s;\r\n-    width: 100%;\r\n-}\r\n-.pagar-btn:hover {\r\n-    background: #0056b3;\r\n-}\r\n-.pago-exitoso {\r\n-    color: #1a8917;\r\n-    background: #e6f9ec;\r\n-    border-radius: 6px;\r\n-    padding: 8px 0;\r\n-    margin-top: 10px;\r\n-    text-align: center;\r\n-    font-weight: bold;\r\n-    font-size: 1.1rem;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1750950889766,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -79,5 +79,22 @@\n     display: block;\r\n     margin-top: 10px;\r\n     text-align: right;\r\n     font-size: 1.1rem;\r\n+}\r\n+.pagar-btn-mini {\r\n+    background: #1a8917;\r\n+    color: #fff;\r\n+    border: none;\r\n+    border-radius: 6px;\r\n+    padding: 4px 12px;\r\n+    font-size: 0.9rem;\r\n+    cursor: pointer;\r\n+    margin-left: 10px;\r\n+    transition: background 0.2s;\r\n+    height: 32px;\r\n+    display: flex;\r\n+    align-items: center;\r\n+}\r\n+.pagar-btn-mini:hover {\r\n+    background: #166d13;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1751028152192,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -96,5 +96,18 @@\n     align-items: center;\r\n }\r\n .pagar-btn-mini:hover {\r\n     background: #166d13;\r\n+}\r\n+.vaciar-carrito-btn {\r\n+    background: none;\r\n+    border: none;\r\n+    color: #d32f2f;\r\n+    font-size: 1.3rem;\r\n+    margin-left: 8px;\r\n+    cursor: pointer;\r\n+    vertical-align: middle;\r\n+    transition: color 0.2s;\r\n+}\r\n+.vaciar-carrito-btn:hover {\r\n+    color: #b71c1c;\r\n }\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1750943023175,
+            "name": "Commit-0",
+            "content": "header{\r\n    background-color: black;\r\n    padding: 20px;\r\n    position: relative;\r\n}\r\nnav {\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: flex-start;\r\n    position: relative;\r\n}\r\nnav a{\r\n    color: white;\r\n    margin: 0 10px;\r\n    text-decoration: none;\r\n    padding: 10px 20px;\r\n}\r\nnav a:hover{\r\n    background-color: white;\r\n    color: black;\r\n    border-radius: 10px;\r\n}\r\n.carrito-container {\r\n    position: absolute;\r\n    right: 20px;\r\n    top: 0;\r\n    display: flex;\r\n    align-items: center;\r\n    height: 100%;\r\n}\r\n.carrito-btn {\r\n    background: none;\r\n    border: none;\r\n    color: white;\r\n    font-size: 1.5rem;\r\n    cursor: pointer;\r\n    position: relative;\r\n    display: flex;\r\n    align-items: center;\r\n}\r\n.carrito-cantidad {\r\n    background: red;\r\n    color: white;\r\n    border-radius: 50%;\r\n    padding: 2px 8px;\r\n    font-size: 0.9rem;\r\n    margin-left: 5px;\r\n    font-weight: bold;\r\n}\r\n.carrito-dropdown {\r\n    position: absolute;\r\n    right: 0;\r\n    top: 40px;\r\n    background: white;\r\n    color: black;\r\n    border-radius: 10px;\r\n    box-shadow: 0 2px 8px rgba(0,0,0,0.2);\r\n    min-width: 220px;\r\n    padding: 15px;\r\n    z-index: 100;\r\n}\r\n.carrito-dropdown div {\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: space-between;\r\n    margin-bottom: 8px;\r\n}\r\n.carrito-dropdown button {\r\n    background: #eee;\r\n    border: none;\r\n    border-radius: 50%;\r\n    width: 24px;\r\n    height: 24px;\r\n    font-size: 1rem;\r\n    cursor: pointer;\r\n    margin: 0 4px;\r\n}\r\n.carrito-dropdown strong {\r\n    display: block;\r\n    margin-top: 10px;\r\n    text-align: right;\r\n    font-size: 1.1rem;\r\n}"
+        }
+    ]
+}

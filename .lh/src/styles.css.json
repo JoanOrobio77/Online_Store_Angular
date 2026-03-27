@@ -1,0 +1,34 @@
+{
+    "sourceFile": "src/styles.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 4,
+            "patches": [
+                {
+                    "date": 1751028826627,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1751029575454,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,5 +9,16 @@\n }\r\n body{\r\n     font-family: Arial, Helvetica, sans-serif;\r\n }\r\n+html, body {\r\n+  height: 100%;\r\n+}\r\n+body {\r\n+  min-height: 100vh;\r\n+  display: flex;\r\n+  flex-direction: column;\r\n+}\r\n+main {\r\n+  flex: 1 0 auto;\r\n+}\r\n \r\n"
+                },
+                {
+                    "date": 1751029864665,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,16 +9,5 @@\n }\r\n body{\r\n     font-family: Arial, Helvetica, sans-serif;\r\n }\r\n-html, body {\r\n-  height: 100%;\r\n-}\r\n-body {\r\n-  min-height: 100vh;\r\n-  display: flex;\r\n-  flex-direction: column;\r\n-}\r\n-main {\r\n-  flex: 1 0 auto;\r\n-}\r\n \r\n"
+                },
+                {
+                    "date": 1751029902505,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,5 +9,16 @@\n }\r\n body{\r\n     font-family: Arial, Helvetica, sans-serif;\r\n }\r\n+html, body {\r\n+  height: 100%;\r\n+}\r\n+body {\r\n+  min-height: 100vh;\r\n+  display: flex;\r\n+  flex-direction: column;\r\n+}\r\n+main {\r\n+  flex: 1 0 auto;\r\n+}\r\n \r\n"
+                },
+                {
+                    "date": 1751030259696,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,6 +19,12 @@\n   flex-direction: column;\r\n }\r\n main {\r\n   flex: 1 0 auto;\r\n+  display: flex;\r\n+  flex-direction: column;\r\n+  justify-content: center;\r\n }\r\n+footer {\r\n+  flex-shrink: 0;\r\n+}\r\n \r\n"
+                }
+            ],
+            "date": 1751028826627,
+            "name": "Commit-0",
+            "content": "/* You can add global styles to this file, and also import other style files */\r\n*{\r\n    box-sizing: border-box;\r\n    margin: 0;\r\n    padding: 0;\r\n}\r\nimg{\r\n        width: 100%;\r\n}\r\nbody{\r\n    font-family: Arial, Helvetica, sans-serif;\r\n}\r\n\r\n"
+        }
+    ]
+}

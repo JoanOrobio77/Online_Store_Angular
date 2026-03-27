@@ -1,0 +1,226 @@
+{
+    "sourceFile": "src/app/pages/catalogo/catalogo.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 52,
+            "patches": [
+                {
+                    "date": 1750909917783,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1750909925932,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-div\r\n+<div cl></div>\r\n"
+                },
+                {
+                    "date": 1750909933140,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-<div cl></div>\r\n+<div class=\"conta\"></div>\r\n"
+                },
+                {
+                    "date": 1750909940232,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-<div class=\"conta\"></div>\r\n+<div class=\"container\"></div>\r\n"
+                },
+                {
+                    "date": 1750909945577,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-<div class=\"container\"></div>\r\n+<div class=\"container mt-\"></div>\r\n"
+                },
+                {
+                    "date": 1750909958131,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,2 @@\n-<div class=\"container mt-\"></div>\r\n+<div class=\"container mt-2\r\n+</div>\r\n"
+                },
+                {
+                    "date": 1750909965059,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,1 @@\n-<div class=\"container mt-2\r\n-</div>\r\n+<div class=\"container mt-2\"></div>\r\n"
+                },
+                {
+                    "date": 1750909971626,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,3 @@\n-<div class=\"container mt-2\"></div>\r\n+<div class=\"container mt-2\">\r\n+    h3\r\n+</div>\r\n"
+                },
+                {
+                    "date": 1750909980053,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n <div class=\"container mt-2\">\r\n-    h3\r\n+    <h3 class=\"tex\"></h3>\r\n </div>\r\n"
+                },
+                {
+                    "date": 1750909985943,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n <div class=\"container mt-2\">\r\n-    <h3 class=\"tex\"></h3>\r\n+    <h3 class=\"text-center\"></h3>\r\n </div>\r\n"
+                },
+                {
+                    "date": 1750909991486,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n <div class=\"container mt-2\">\r\n-    <h3 class=\"text-center\"></h3>\r\n+    <h3 class=\"text-center\">Cata</h3>\r\n </div>\r\n"
+                },
+                {
+                    "date": 1750909998673,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,4 @@\n <div class=\"container mt-2\">\r\n-    <h3 class=\"text-center\">Cata</h3>\r\n+    <h3 class=\"text-center\">Catalogo</h3>\r\n+    \r\n </div>\r\n"
+                },
+                {
+                    "date": 1750910008689,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n <div class=\"container mt-2\">\r\n     <h3 class=\"text-center\">Catalogo</h3>\r\n-    \r\n+    <hr />\r\n </div>\r\n"
+                },
+                {
+                    "date": 1750910016126,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,6 @@\n <div class=\"container mt-2\">\r\n     <h3 class=\"text-center\">Catalogo</h3>\r\n     <hr />\r\n+\r\n+    <div></div>\r\n </div>\r\n"
+                },
+                {
+                    "date": 1750910022248,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n <div class=\"container mt-2\">\r\n     <h3 class=\"text-center\">Catalogo</h3>\r\n     <hr />\r\n \r\n-    <div></div>\r\n+    <div class=\"\"></div>\r\n </div>\r\n"
+                },
+                {
+                    "date": 1750910030651,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,8 @@\n <div class=\"container mt-2\">\r\n     <h3 class=\"text-center\">Catalogo</h3>\r\n     <hr />\r\n \r\n-    <div class=\"\"></div>\r\n+    <div class=\"row\">\r\n+        \r\n+    </div>\r\n </div>\r\n"
+                },
+                {
+                    "date": 1750910035981,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,7 +2,7 @@\n     <h3 class=\"text-center\">Catalogo</h3>\r\n     <hr />\r\n \r\n     <div class=\"row\">\r\n-        \r\n+        @for\r\n     </div>\r\n </div>\r\n"
+                },
+                {
+                    "date": 1750910041341,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,7 +2,7 @@\n     <h3 class=\"text-center\">Catalogo</h3>\r\n     <hr />\r\n \r\n     <div class=\"row\">\r\n-        @for\r\n+        @for(item)\r\n     </div>\r\n </div>\r\n"
+                },
+                {
+                    "date": 1750910050912,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,7 +2,7 @@\n     <h3 class=\"text-center\">Catalogo</h3>\r\n     <hr />\r\n \r\n     <div class=\"row\">\r\n-        @for(item)\r\n+        @for(item of productos)\r\n     </div>\r\n </div>\r\n"
+                },
+                {
+                    "date": 1750910056137,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,7 +2,7 @@\n     <h3 class=\"text-center\">Catalogo</h3>\r\n     <hr />\r\n \r\n     <div class=\"row\">\r\n-        @for(item of productos)\r\n+        @for(item of productos; t)\r\n     </div>\r\n </div>\r\n"
+                },
+                {
+                    "date": 1750910062277,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,7 +2,7 @@\n     <h3 class=\"text-center\">Catalogo</h3>\r\n     <hr />\r\n \r\n     <div class=\"row\">\r\n-        @for(item of productos; t)\r\n+        @for(item of productos; track item.)\r\n     </div>\r\n </div>\r\n"
+                },
+                {
+                    "date": 1750910068752,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,7 +2,9 @@\n     <h3 class=\"text-center\">Catalogo</h3>\r\n     <hr />\r\n \r\n     <div class=\"row\">\r\n-        @for(item of productos; track item.)\r\n+        @for(item of productos; track item.id){\r\n+            \r\n+        }\r\n     </div>\r\n </div>\r\n"
+                },
+                {
+                    "date": 1750910076819,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,8 @@\n     <hr />\r\n \r\n     <div class=\"row\">\r\n         @for(item of productos; track item.id){\r\n-            \r\n+            <div class></div>\r\n         }\r\n     </div>\r\n </div>\r\n"
+                },
+                {
+                    "date": 1750910101803,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,8 @@\n     <hr />\r\n \r\n     <div class=\"row\">\r\n         @for(item of productos; track item.id){\r\n-            <div class></div>\r\n+            <div class=\"col\"></div>\r\n         }\r\n     </div>\r\n </div>\r\n"
+                },
+                {
+                    "date": 1750910106999,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,8 @@\n     <hr />\r\n \r\n     <div class=\"row\">\r\n         @for(item of productos; track item.id){\r\n-            <div class=\"col\"></div>\r\n+            <div class=\"col-sm\"></div>\r\n         }\r\n     </div>\r\n </div>\r\n"
+                },
+                {
+                    "date": 1750910113897,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,8 @@\n     <hr />\r\n \r\n     <div class=\"row\">\r\n         @for(item of productos; track item.id){\r\n-            <div class=\"col-sm\"></div>\r\n+            <div class=\"col-sm-3-mt-\"></div>\r\n         }\r\n     </div>\r\n </div>\r\n"
+                },
+                {
+                    "date": 1750910124499,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,10 @@\n     <hr />\r\n \r\n     <div class=\"row\">\r\n         @for(item of productos; track item.id){\r\n-            <div class=\"col-sm-3-mt-\"></div>\r\n+            <div class=\"col-sm-3-mt-1\">\r\n+                \r\n+            </div>\r\n         }\r\n     </div>\r\n </div>\r\n"
+                },
+                {
+                    "date": 1750910130006,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n \r\n     <div class=\"row\">\r\n         @for(item of productos; track item.id){\r\n             <div class=\"col-sm-3-mt-1\">\r\n-                \r\n+                <div></div>\r\n             </div>\r\n         }\r\n     </div>\r\n </div>\r\n"
+                },
+                {
+                    "date": 1750910136611,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n \r\n     <div class=\"row\">\r\n         @for(item of productos; track item.id){\r\n             <div class=\"col-sm-3-mt-1\">\r\n-                <div></div>\r\n+                <div clas></div>\r\n             </div>\r\n         }\r\n     </div>\r\n </div>\r\n"
+                },
+                {
+                    "date": 1750910148677,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,11 @@\n \r\n     <div class=\"row\">\r\n         @for(item of productos; track item.id){\r\n             <div class=\"col-sm-3-mt-1\">\r\n-                <div clas></div>\r\n+                <div class=\"card\">\r\n+                    \r\n+                </div>\r\n             </div>\r\n         }\r\n     </div>\r\n </div>\r\n"
+                },
+                {
+                    "date": 1750910154601,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n     <div class=\"row\">\r\n         @for(item of productos; track item.id){\r\n             <div class=\"col-sm-3-mt-1\">\r\n                 <div class=\"card\">\r\n-                    \r\n+                    <div></div>\r\n                 </div>\r\n             </div>\r\n         }\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1750910172139,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n     <div class=\"row\">\r\n         @for(item of productos; track item.id){\r\n             <div class=\"col-sm-3-mt-1\">\r\n                 <div class=\"card\">\r\n-                    <div></div>\r\n+                    <div class=\"\"></div>\r\n                 </div>\r\n             </div>\r\n         }\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1750910177951,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n     <div class=\"row\">\r\n         @for(item of productos; track item.id){\r\n             <div class=\"col-sm-3-mt-1\">\r\n                 <div class=\"card\">\r\n-                    <div class=\"\"></div>\r\n+                    <div class=\"card\"></div>\r\n                 </div>\r\n             </div>\r\n         }\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1750910187260,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n     <div class=\"row\">\r\n         @for(item of productos; track item.id){\r\n             <div class=\"col-sm-3-mt-1\">\r\n                 <div class=\"card\">\r\n-                    <div class=\"card\"></div>\r\n+                    <div class=\"card-\"></div>\r\n                 </div>\r\n             </div>\r\n         }\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1750910198644,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,11 @@\n     <div class=\"row\">\r\n         @for(item of productos; track item.id){\r\n             <div class=\"col-sm-3-mt-1\">\r\n                 <div class=\"card\">\r\n-                    <div class=\"card-\"></div>\r\n+                    <div class=\"card-body\">\r\n+                        im\r\n+                    </div>\r\n                 </div>\r\n             </div>\r\n         }\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1750910205627,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n         @for(item of productos; track item.id){\r\n             <div class=\"col-sm-3-mt-1\">\r\n                 <div class=\"card\">\r\n                     <div class=\"card-body\">\r\n-                        im\r\n+                        <img src=]\"\" alt=\"\">\r\n                     </div>\r\n                 </div>\r\n             </div>\r\n         }\r\n"
+                },
+                {
+                    "date": 1750910213454,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n         @for(item of productos; track item.id){\r\n             <div class=\"col-sm-3-mt-1\">\r\n                 <div class=\"card\">\r\n                     <div class=\"card-body\">\r\n-                        <img src=]\"\" alt=\"\">\r\n+                        <img [src]=\"\" alt=\"\">\r\n                     </div>\r\n                 </div>\r\n             </div>\r\n         }\r\n"
+                },
+                {
+                    "date": 1750910226925,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n         @for(item of productos; track item.id){\r\n             <div class=\"col-sm-3-mt-1\">\r\n                 <div class=\"card\">\r\n                     <div class=\"card-body\">\r\n-                        <img [src]=\"\" alt=\"\">\r\n+                        <img [src]=\"''\" alt=\"\">\r\n                     </div>\r\n                 </div>\r\n             </div>\r\n         }\r\n"
+                },
+                {
+                    "date": 1750910233018,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n         @for(item of productos; track item.id){\r\n             <div class=\"col-sm-3-mt-1\">\r\n                 <div class=\"card\">\r\n                     <div class=\"card-body\">\r\n-                        <img [src]=\"''\" alt=\"\">\r\n+                        <img [src]=\"'img'\" alt=\"\">\r\n                     </div>\r\n                 </div>\r\n             </div>\r\n         }\r\n"
+                },
+                {
+                    "date": 1750910248172,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n         @for(item of productos; track item.id){\r\n             <div class=\"col-sm-3-mt-1\">\r\n                 <div class=\"card\">\r\n                     <div class=\"card-body\">\r\n-                        <img [src]=\"'img'\" alt=\"\">\r\n+                        <img [src]=\"'img/'+\" alt=\"\">\r\n                     </div>\r\n                 </div>\r\n             </div>\r\n         }\r\n"
+                },
+                {
+                    "date": 1750910258577,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n         @for(item of productos; track item.id){\r\n             <div class=\"col-sm-3-mt-1\">\r\n                 <div class=\"card\">\r\n                     <div class=\"card-body\">\r\n-                        <img [src]=\"'img/'+\" alt=\"\">\r\n+                        <img [src]=\"'img/' + ite\" alt=\"\">\r\n                     </div>\r\n                 </div>\r\n             </div>\r\n         }\r\n"
+                },
+                {
+                    "date": 1750910264616,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n         @for(item of productos; track item.id){\r\n             <div class=\"col-sm-3-mt-1\">\r\n                 <div class=\"card\">\r\n                     <div class=\"card-body\">\r\n-                        <img [src]=\"'img/' + ite\" alt=\"\">\r\n+                        <img [src]=\"'img/' + item.im\" alt=\"\">\r\n                     </div>\r\n                 </div>\r\n             </div>\r\n         }\r\n"
+                },
+                {
+                    "date": 1750910283750,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n         @for(item of productos; track item.id){\r\n             <div class=\"col-sm-3-mt-1\">\r\n                 <div class=\"card\">\r\n                     <div class=\"card-body\">\r\n-                        <img [src]=\"'img/' + item.im\" alt=\"\">\r\n+                        <img [src]=\"'img/' + item.imagen\" alt\">\r\n                     </div>\r\n                 </div>\r\n             </div>\r\n         }\r\n"
+                },
+                {
+                    "date": 1750910291824,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,10 @@\n         @for(item of productos; track item.id){\r\n             <div class=\"col-sm-3-mt-1\">\r\n                 <div class=\"card\">\r\n                     <div class=\"card-body\">\r\n-                        <img [src]=\"'img/' + item.imagen\" alt\">\r\n+                        <img [src]=\"'img/' + item.imagen\" />\r\n+                        \r\n                     </div>\r\n                 </div>\r\n             </div>\r\n         }\r\n"
+                },
+                {
+                    "date": 1750910296883,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n             <div class=\"col-sm-3-mt-1\">\r\n                 <div class=\"card\">\r\n                     <div class=\"card-body\">\r\n                         <img [src]=\"'img/' + item.imagen\" />\r\n-                        \r\n+                        p\r\n                     </div>\r\n                 </div>\r\n             </div>\r\n         }\r\n"
+                },
+                {
+                    "date": 1750910304868,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n             <div class=\"col-sm-3-mt-1\">\r\n                 <div class=\"card\">\r\n                     <div class=\"card-body\">\r\n                         <img [src]=\"'img/' + item.imagen\" />\r\n-                        p\r\n+                        <p class></p>\r\n                     </div>\r\n                 </div>\r\n             </div>\r\n         }\r\n"
+                },
+                {
+                    "date": 1750910311840,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n             <div class=\"col-sm-3-mt-1\">\r\n                 <div class=\"card\">\r\n                     <div class=\"card-body\">\r\n                         <img [src]=\"'img/' + item.imagen\" />\r\n-                        <p class></p>\r\n+                        <p class=\"fw\"></p>\r\n                     </div>\r\n                 </div>\r\n             </div>\r\n         }\r\n"
+                },
+                {
+                    "date": 1750910321175,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n             <div class=\"col-sm-3-mt-1\">\r\n                 <div class=\"card\">\r\n                     <div class=\"card-body\">\r\n                         <img [src]=\"'img/' + item.imagen\" />\r\n-                        <p class=\"fw\"></p>\r\n+                        <p class=\"fw-bold\">{</p>\r\n                     </div>\r\n                 </div>\r\n             </div>\r\n         }\r\n"
+                },
+                {
+                    "date": 1750910326686,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n             <div class=\"col-sm-3-mt-1\">\r\n                 <div class=\"card\">\r\n                     <div class=\"card-body\">\r\n                         <img [src]=\"'img/' + item.imagen\" />\r\n-                        <p class=\"fw-bold\">{</p>\r\n+                        <p class=\"fw-bold\">{{}}</p>\r\n                     </div>\r\n                 </div>\r\n             </div>\r\n         }\r\n"
+                },
+                {
+                    "date": 1750910344765,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n             <div class=\"col-sm-3-mt-1\">\r\n                 <div class=\"card\">\r\n                     <div class=\"card-body\">\r\n                         <img [src]=\"'img/' + item.imagen\" />\r\n-                        <p class=\"fw-bold\">{{}}</p>\r\n+                        <p class=\"fw-bold\">{{item.nombre}}</p>\r\n                     </div>\r\n                 </div>\r\n             </div>\r\n         }\r\n"
+                },
+                {
+                    "date": 1750910354007,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,9 @@\n                 <div class=\"card\">\r\n                     <div class=\"card-body\">\r\n                         <img [src]=\"'img/' + item.imagen\" />\r\n                         <p class=\"fw-bold\">{{item.nombre}}</p>\r\n+                        \r\n                     </div>\r\n                 </div>\r\n             </div>\r\n         }\r\n"
+                },
+                {
+                    "date": 1750910360421,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n                 <div class=\"card\">\r\n                     <div class=\"card-body\">\r\n                         <img [src]=\"'img/' + item.imagen\" />\r\n                         <p class=\"fw-bold\">{{item.nombre}}</p>\r\n-                        \r\n+                        <div class></div>\r\n                     </div>\r\n                 </div>\r\n             </div>\r\n         }\r\n"
+                },
+                {
+                    "date": 1750910366446,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n                 <div class=\"card\">\r\n                     <div class=\"card-body\">\r\n                         <img [src]=\"'img/' + item.imagen\" />\r\n                         <p class=\"fw-bold\">{{item.nombre}}</p>\r\n-                        <div class=\"d\"></div>\r\n+                        <div class=\"d-\"></div>\r\n                     </div>\r\n                 </div>\r\n             </div>\r\n         }\r\n"
+                }
+            ],
+            "date": 1750909917783,
+            "name": "Commit-0",
+            "content": "div\r\n"
+        }
+    ]
+}

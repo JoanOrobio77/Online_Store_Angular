@@ -1,0 +1,113 @@
+header{
+    background-color: black;
+    padding: 20px;
+    position: relative;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+}
+nav a{
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+nav a:hover{
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+}
+.carrito-container {
+    position: absolute;
+    right: 20px;
+    top: 0;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.carrito-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.carrito-cantidad {
+    background: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 8px;
+    font-size: 0.9rem;
+    margin-left: 5px;
+    font-weight: bold;
+}
+.carrito-dropdown {
+    position: absolute;
+    right: 0;
+    top: 40px;
+    background: white;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    min-width: 220px;
+    padding: 15px;
+    z-index: 100;
+}
+.carrito-dropdown div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+.carrito-dropdown button {
+    background: #eee;
+    border: none;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 0 4px;
+}
+.carrito-dropdown strong {
+    display: block;
+    margin-top: 10px;
+    text-align: right;
+    font-size: 1.1rem;
+}
+.pagar-btn-mini {
+    background: #1a8917;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 4px 12px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background 0.2s;
+    height: 32px;
+    display: flex;
+    align-items: center;
+}
+.pagar-btn-mini:hover {
+    background: #166d13;
+}
+.vaciar-carrito-btn {
+    background: none;
+    border: none;
+    color: #d32f2f;
+    font-size: 1.3rem;
+    margin-left: 8px;
+    cursor: pointer;
+    vertical-align: middle;
+    transition: color 0.2s;
+}
+.vaciar-carrito-btn:hover {
+    color: #b71c1c;
+}

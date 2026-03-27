@@ -5,6 +5,8 @@
 ## Descripción
 
 **Bikes** es una aplicación web moderna desarrollada con Angular para una tienda de bicicletas. Ofrece una experiencia de usuario intuitiva para explorar productos, gestionar un carrito de compras, iniciar sesión y registrarse. La aplicación incluye renderizado del lado del servidor (SSR) para un mejor rendimiento y SEO.
+<img width="1900" height="863" alt="image" src="https://github.com/user-attachments/assets/cbf52b08-b946-4576-91c5-495de7c82960" />
+<img width="1890" height="863" alt="image" src="https://github.com/user-attachments/assets/15a0650b-59a4-4838-a0df-62ad17e47af6" />
 
 ## Características
 
